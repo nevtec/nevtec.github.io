@@ -1,25 +1,68 @@
 import styled from "styled-components";
-import montserrat from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
 
-export const MediaWrapper = styled.article `
-    @font-face {
-        font-family: "montserrat-regular-webfont";
-        src: url(${montserrat});
-    } 
+export const MediaWrapper = styled.nav ` 
     
-    font-family: "montserrat-bold-webfont";
     color: #fff;
     position: absolute;
-    right: 0;
-    top: 272px;
-    
-    div{
-        width: 50px;
-        height: 50px;
-        border: 1px solid #fff;
-        border-radius: 50px 50px;
-        text-align-last: center;
-        margin: 6px;
+    right: 84px;
+    top: 280px;
+    width: 100px;
+
+    li{
+        list-style-type: none;
+        cursor: pointer;
+        position: relative;
+        height: 60px;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all .5s linear;
+            display: block;
+
+            figure{
+                width: 38px;
+                height: 38px;
+                border: 2px solid #fff;
+                border-radius: 38px 38px;
+                text-align-last: center;
+                position: absolute;
+                top: -24px;
+                left: 30px;
+            }
+
+            span{
+                display: none;
+            }
+
+            &:hover{
+                z-index: 1;
+
+                span{
+                    display: block;
+                    padding-left: -40%;
+                }
+            }
+        }
+    }
+
+    svg{
+        width: 22px;
+        padding-top: 8px;
+    }
+
+    @media (max-width: 930px){
+        top: 198px;
+    }
+
+    @media (max-width: 783px){
+        bottom: -106px;
     }
     
+    @media (max-width: 720px){
+        display: none;
+    }
 `

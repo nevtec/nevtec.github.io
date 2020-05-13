@@ -3,10 +3,11 @@ import * as Styled from './styled'
 import Logo from '../Logo/'
 import Menu from '../Menu/'
 import SocialMedia from '../SocialMedia'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header = () => (
-  <Styled.SectionHeader>
-    <Styled.HeaderShadow></Styled.HeaderShadow>
+  <Styled.SectionHeader id="Header">
+    {/* <Styled.HeaderShadow></Styled.HeaderShadow> */}
 
     <Styled.PositionLogo>
       <Logo />
@@ -23,7 +24,7 @@ const Header = () => (
 
         <Styled.BtnHeader>
           <button>start a project</button>
-          <button>more about us</button>
+          <button onClick={() => scrollTo('#About')}>more about us</button>
         </Styled.BtnHeader>
     </Styled.HeaderWrapper>
 
@@ -38,7 +39,7 @@ const Header = () => (
     </div>
 
     <Styled.ScrollD>
-      <a href="#About">Scroll Down</a>
+      <a onClick={() => scrollTo('#About')}>Scroll Down</a>
       <div></div>
     </Styled.ScrollD>
 

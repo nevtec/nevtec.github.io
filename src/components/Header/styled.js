@@ -11,7 +11,7 @@ export const SectionHeader = styled.section `
     background-size: cover;
     opacity: .9;
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 138px;
 
     @font-face {
         font-family: "montserrat-regular-webfont";
@@ -19,17 +19,18 @@ export const SectionHeader = styled.section `
     }
 `
 
-export const HeaderShadow = styled.div `
+/*export const HeaderShadow = styled.div `
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 135%;
+    height: 133%;
     opacity: .6;
     background-color: #000000;
-`
+`*/
 
 export const PositionLogo = styled.div `
+    max-width: 10%;
     padding: 38px;
     z-index: 2;
 `
@@ -37,7 +38,7 @@ export const PositionLogo = styled.div `
 export const HeaderWrapper = styled.div `
     
 
-    max-width: 716px;
+    max-width: 55%;
     font-family: "montserrat-bold-webfont";
     position: relative;
     padding-top: 228px;
@@ -54,6 +55,53 @@ export const HeaderWrapper = styled.div `
         color: #fff;
         margin-top: 0;
         line-height: 76px;
+    }
+
+    @media (max-width: 1315px){
+        h1{
+            font-size: 43px;
+        }
+    }
+
+    @media (max-width: 1014px){
+        max-width: 60%;
+    }
+
+    @media (max-width: 930px){
+        padding-top: 150px;
+
+        h1{
+            font-size: 36px; 
+        }
+    }
+
+    @media (max-width: 720px){
+        max-width: 70%;
+        margin-left: -44px;
+        text-align: center;
+
+        h1{
+            line-height: 68px;
+        }
+    }
+
+    @media (max-width: 600px){
+        h1{
+            font-size: 32px;
+            line-height: 57px;
+        }
+    }
+
+    @media (max-width: 500px){
+        h3{
+            line-height: 40px;
+            font-size: 14px;
+        }
+
+        h1{
+            font-size: 26px;
+            line-height: 50px;
+        }
     }
 
 `
@@ -79,15 +127,31 @@ export const BtnHeader = styled.div `
             background: #fff;
             color: #000;
         }
-    }   
+    }  
+    
+    @media (max-width: 783px){
+        flex-direction: column;
+
+        button{
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 720px){
+        padding-top: 20;
+    }
+
+    @media (max-width: 600px){
+        padding-top: 10px;
+    }
 
 `
 
 export const ScrollD = styled.div `
     position: absolute;
     z-index: 3;
-    bottom: -106px;
-    right: 54px;
+    bottom: -186px;
+    right: 68px;
     
     a{
         font-family: "montserrat-bold-webfont";
@@ -95,6 +159,12 @@ export const ScrollD = styled.div `
         color: #fff;
         text-transform: uppercase;
         font-size: 12px;
+        transition: all 0.6s;
+
+        &:hover{
+            color: #345cc6;
+            cursor: pointer;
+        }
     }
 
     div{
@@ -105,14 +175,41 @@ export const ScrollD = styled.div `
         bottom: -152px;
         background-color: #345cc6;
     }
+
+    @media (max-width: 1315px){
+        bottom: -165px;
+    }
+
+    @media (max-width: 930px){
+        bottom: -106px;
+    }
+
+    @media (max-width: 783px){
+        bottom: -250px;
+    }
+
+    @media (max-width: 720px){
+        bottom: -174px;
+    }
+
+    @media (max-width: 672px){
+        bottom: -258px;
+    }
+
+    @media (max-width: 600px){
+        bottom: -62px;
+    }
+
+    @media (max-width: 500px){
+        bottom: -32px;
+    }
+
 `
 
 export const MenuSection = styled.div `
 
-
 `
 
 export const SocialSection = styled.div `
-
 
 `

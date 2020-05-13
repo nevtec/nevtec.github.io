@@ -1,0 +1,8 @@
+.menu {
+    margin-right: -100%;
+    transition: all .6s;
+}
+
+#bt_menu:checked ~ .menu{
+    margin-right: 0;
+}
