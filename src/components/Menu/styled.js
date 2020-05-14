@@ -9,7 +9,8 @@ export const BtnMenu = styled.label `
     }
 
     display: block;
-    position: absolute;
+    position: fixed;
+    background-color: #000;
     right: 4px;
     top: -8px;
     margin: 38px;

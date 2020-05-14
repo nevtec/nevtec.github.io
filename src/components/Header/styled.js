@@ -173,7 +173,7 @@ export const ScrollD = styled.div `
         position: absolute;
         right: -20px;
         bottom: -152px;
-        background-color: #345cc6;
+        background-color: #1e8bc3;
     }
 
     @media (max-width: 1315px){
