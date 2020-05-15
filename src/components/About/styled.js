@@ -52,6 +52,47 @@ export const AboutSection = styled.section `
         }
     }
 
+    @media (max-width: 992px){
+
+        header{
+            h3{
+                font-size: 14px; 
+            }
+    
+            h1{
+                font-size: 62px;
+            }
+        }
+
+        div{
+            max-width: 896px;
+        }
+
+        p{
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+    }
+
+    @media (max-width: 720px){
+
+        header{
+            h1{
+                font-size: 66px;
+                line-height: 68px;
+            }
+            
+            p{
+                font-size: 18px;
+            }
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+
 `
 export const ScoreWrapper = styled.div `
     display: flex;
@@ -73,5 +114,23 @@ export const ScoreWrapper = styled.div `
 
     h5{
         color: #000;
+    }
+
+    @media (max-width: 992px){
+        display: flex;
+        flex-wrap: wrap;
+
+        .acount{
+            font-size: 80px;
+        }
+
+        h5{
+            font-size: 12px;
+        }
+
+        .ScoreBox{
+            padding: 0px 20px;
+        }
+
     }
 `
