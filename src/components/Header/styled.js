@@ -147,65 +147,6 @@ export const BtnHeader = styled.div `
 
 `
 
-export const ScrollD = styled.div `
-    position: absolute;
-    z-index: 3;
-    bottom: -186px;
-    right: 68px;
-    
-    a{
-        font-family: "montserrat-bold-webfont";
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 12px;
-        transition: all 0.6s;
-
-        &:hover{
-            color: #345cc6;
-            cursor: pointer;
-        }
-    }
-
-    div{
-        width: 2px;
-        height: 162px;
-        position: absolute;
-        right: -20px;
-        bottom: -152px;
-        background-color: #345cc6;
-    }
-
-    @media (max-width: 1315px){
-        bottom: -165px;
-    }
-
-    @media (max-width: 930px){
-        bottom: -106px;
-    }
-
-    @media (max-width: 783px){
-        bottom: -250px;
-    }
-
-    @media (max-width: 720px){
-        bottom: -174px;
-    }
-
-    @media (max-width: 672px){
-        bottom: -258px;
-    }
-
-    @media (max-width: 600px){
-        bottom: -62px;
-    }
-
-    @media (max-width: 500px){
-        bottom: -32px;
-    }
-
-`
-
 export const MenuSection = styled.div `
 
 `

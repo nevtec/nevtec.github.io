@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import montserrat from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
 import montserratlight from '../../fonts/montserrat/montserrat-light-webfont.woff2';
+import Icons from '../Icons';
 
 export const BtnMenu = styled.label `
     @font-face {
@@ -8,8 +9,9 @@ export const BtnMenu = styled.label `
         src: url(${montserrat});
     }
 
-    display: block;
-    position: absolute;
+    height: 40px;
+    background-color: #000000ad;
+    position: fixed;
     right: 4px;
     top: -8px;
     margin: 38px;
@@ -102,5 +104,107 @@ export const TextMenu = styled.div `
 
     span{
         color: #1e8bc3;
+    }
+`
+
+export const SocialStyle = styled.div `
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+
+        li{
+            margin: 0 8px;
+        }
+
+        a{
+            
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+`
+
+export const FaceWrapper = styled(Icons.Facebook) `
+    width: 18px;
+    height: 18px;
+    border: 2px solid #808080;
+    border-radius: 38px 38px;
+    transition: all 0.6s;
+    color: #808080;
+
+    &:hover{
+        
+        color: #3b5998;
+        border: 2px solid #3b5998;
+    }
+`
+
+export const TwitterWrapper = styled(Icons.Twitter) `
+    width: 18px;
+    height: 18px;
+    border: 2px solid #808080;
+    border-radius: 38px 38px;
+    transition: all 0.6s;
+    color: #808080;
+
+    &:hover{
+        
+        color: #1da1f2;
+        border: 2px solid #1da1f2;
+    }
+`
+
+export const InstaWrapper = styled(Icons.Instagram) `
+    width: 18px;
+    height: 18px;
+    border: 2px solid #808080;
+    border-radius: 38px 38px;
+    transition: all 0.6s;
+    color: #808080;
+
+    &:hover{
+        
+        color: #e95950;
+        border: 2px solid #e95950;
+    }
+`
+
+export const BehanceWrapper = styled(Icons.Behance) `
+    width: 18px;
+    height: 18px;
+    border: 2px solid #808080;
+    border-radius: 38px 38px;
+    transition: all 0.6s;
+    color: #808080;
+
+    &:hover{
+        
+        color: #053eff;
+        border: 2px solid #053eff;
+    }
+`
+
+export const DribbbleWrapper = styled(Icons.Dribbble) `
+    width: 18px;
+    height: 18px;
+    border: 2px solid #808080;
+    border-radius: 38px 38px;
+    transition: all 0.6s;
+    color: #808080;
+
+    &:hover{
+        
+        color: #ea4c89 ;
+        border: 2px solid #ea4c89;
     }
 `

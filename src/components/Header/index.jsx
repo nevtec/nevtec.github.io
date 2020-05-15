@@ -4,6 +4,7 @@ import Logo from '../Logo/'
 import Menu from '../Menu/'
 import SocialMedia from '../SocialMedia'
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import ScrollDown from '../ScrollDown/index'
 
 const Header = () => (
   <Styled.SectionHeader id="Header">
@@ -37,11 +38,8 @@ const Header = () => (
         <SocialMedia />
       </Styled.SocialSection>
     </div>
-
-    <Styled.ScrollD>
-      <a onClick={() => scrollTo('#About')}>Scroll Down</a>
-      <div></div>
-    </Styled.ScrollD>
+    
+    <ScrollDown />
 
   </Styled.SectionHeader>
 )

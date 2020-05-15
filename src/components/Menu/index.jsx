@@ -3,6 +3,7 @@ import * as Styled from './styled'
 import { Link } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import "./style.css"
+import SocialMedia from '../SocialMedia'
 
 const Menu = () => (
   <Styled.Gerald>
@@ -46,9 +47,26 @@ const Menu = () => (
           </p>
         </Styled.TextMenu>
 
-        <div>
-          Social Media
-        </div>
+        <Styled.SocialStyle>
+          <ul>
+            <li><a href="#">
+              <Styled.FaceWrapper />
+            </a></li>
+            <li><a href="#">
+              <Styled.TwitterWrapper />
+            </a></li>
+            <li><a href="#">
+              <Styled.InstaWrapper />
+            </a></li>
+            <li><a href="#">
+              <Styled.BehanceWrapper />
+            </a></li>
+            <li><a href="#">
+              <Styled.DribbbleWrapper />
+            </a></li>
+          </ul>
+        </Styled.SocialStyle>
+
       </div>
 
     </Styled.SideMenu>
