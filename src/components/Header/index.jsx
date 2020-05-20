@@ -1,14 +1,14 @@
-import React from "react"
-import * as Styled from './styled'
-import Logo from '../Logo/'
-import Menu from '../Menu/'
-import SocialMedia from '../SocialMedia'
+import React from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import ScrollDown from '../ScrollDown/index'
+import * as Styled from './styled';
+
+import Logo from '../Logo/';
+import Menu from '../Menu/';
+import SocialMedia from '../SocialMedia';
+import ScrollDown from '../ScrollDown/index';
 
 const Header = () => (
-  <Styled.SectionHeader id="Header">
-    {/* <Styled.HeaderShadow></Styled.HeaderShadow> */}
+  <Styled.SectionHeader >
 
     <Styled.PositionLogo>
       <Logo />

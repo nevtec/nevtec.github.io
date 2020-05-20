@@ -38,6 +38,15 @@ export const Gerald = styled.div `
     input{
         display: none;
     }
+
+    .menu {
+    margin-right: -100%;
+    transition: all .6s;
+    }
+
+    #bt_menu:checked ~ .menu{
+        margin-right: 0;
+    }
 `
 
 export const SideMenu = styled.div `
@@ -134,13 +143,18 @@ export const SocialStyle = styled.div `
     
 `
 
-export const FaceWrapper = styled(Icons.Facebook) `
+const iconsocial = `
     width: 18px;
     height: 18px;
     border: 2px solid #808080;
     border-radius: 38px 38px;
     transition: all 0.6s;
     color: #808080;
+  
+`
+
+export const FaceWrapper = styled(Icons.Facebook) `
+    iconsocial: ${iconsocial};
 
     &:hover{
         
@@ -150,12 +164,7 @@ export const FaceWrapper = styled(Icons.Facebook) `
 `
 
 export const TwitterWrapper = styled(Icons.Twitter) `
-    width: 18px;
-    height: 18px;
-    border: 2px solid #808080;
-    border-radius: 38px 38px;
-    transition: all 0.6s;
-    color: #808080;
+    iconsocial: ${iconsocial};
 
     &:hover{
         
@@ -165,12 +174,7 @@ export const TwitterWrapper = styled(Icons.Twitter) `
 `
 
 export const InstaWrapper = styled(Icons.Instagram) `
-    width: 18px;
-    height: 18px;
-    border: 2px solid #808080;
-    border-radius: 38px 38px;
-    transition: all 0.6s;
-    color: #808080;
+    iconsocial: ${iconsocial};
 
     &:hover{
         
@@ -180,12 +184,7 @@ export const InstaWrapper = styled(Icons.Instagram) `
 `
 
 export const BehanceWrapper = styled(Icons.Behance) `
-    width: 18px;
-    height: 18px;
-    border: 2px solid #808080;
-    border-radius: 38px 38px;
-    transition: all 0.6s;
-    color: #808080;
+    iconsocial: ${iconsocial};
 
     &:hover{
         
@@ -195,12 +194,7 @@ export const BehanceWrapper = styled(Icons.Behance) `
 `
 
 export const DribbbleWrapper = styled(Icons.Dribbble) `
-    width: 18px;
-    height: 18px;
-    border: 2px solid #808080;
-    border-radius: 38px 38px;
-    transition: all 0.6s;
-    color: #808080;
+    iconsocial: ${iconsocial};
 
     &:hover{
         

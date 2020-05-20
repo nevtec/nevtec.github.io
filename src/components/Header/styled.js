@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from '../../images/back.jpg';
-import montserrat from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
+
 
 export const SectionHeader = styled.section `
     width: 100%;
@@ -12,22 +12,7 @@ export const SectionHeader = styled.section `
     opacity: .9;
     display: flex;
     padding-bottom: 138px;
-
-    @font-face {
-        font-family: "montserrat-regular-webfont";
-        src: url(${montserrat});
-    }
 `
-
-/*export const HeaderShadow = styled.div `
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 133%;
-    opacity: .6;
-    background-color: #000000;
-`*/
 
 export const PositionLogo = styled.div `
     max-width: 10%;

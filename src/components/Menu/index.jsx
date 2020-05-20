@@ -1,8 +1,6 @@
 import React from "react"
 import * as Styled from './styled'
-import { Link } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import "./style.css"
 import SocialMedia from '../SocialMedia'
 
 const Menu = () => (
