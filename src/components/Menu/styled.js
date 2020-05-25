@@ -10,12 +10,12 @@ export const BtnMenu = styled.label `
     }
 
     height: 40px;
-    background-color: #000000ad;
+    background-color: ${({ theme }) => theme.colors.bgBtnMenu};
     position: fixed;
     right: 4px;
     top: -8px;
     margin: 38px;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.whiteDefault};
     font-size: 28px;
     cursor: pointer;
     z-index: 99;
@@ -24,12 +24,12 @@ export const BtnMenu = styled.label `
         font-family: "montserrat-regular-webfont";
         font-size: 16px;
         text-transform: uppercase;
-        color: #1e8bc3;
+        color: ${({ theme }) => theme.colors.blueDefault};
         padding-right: 14px;
         transition: all 0.6s;
 
         &:hover{
-            color: #fff;
+            color: ${({ theme }) => theme.colors.whiteDefault};
         }   
     }
 `
@@ -56,8 +56,8 @@ export const SideMenu = styled.div `
     }
 
     font-family: "montserrat-regular-webfont";
-    color: #fff;
-    background-color: #000;
+    color: ${({ theme }) => theme.colors.whiteDefault};
+    background-color: ${({ theme }) => theme.colors.bgMenu};
     width: 280px;
     height: 100%;
     position: absolute;
@@ -89,7 +89,7 @@ export const SideMenu = styled.div `
 
             a:hover{
                 transition: all 0.6s;
-                color: #1e8bc3;
+                color: ${({ theme }) => theme.colors.blueDefault};
             }
         }
     }
@@ -106,13 +106,13 @@ export const TextMenu = styled.div `
     font-family: "montserrat-light-webfont";
 
     p{
-        color: #808080;
+        color: ${({ theme }) => theme.colors.grayText};
         line-height: 23px;
         font-size: 13px;
     }
 
     span{
-        color: #1e8bc3;
+        color: ${({ theme }) => theme.colors.blueDefault};
     }
 `
 
@@ -134,7 +134,7 @@ export const SocialStyle = styled.div `
 
         a{
             
-            color: #fff;
+            color: ${({ theme }) => theme.colors.whiteDefault};
             display: block;
             width: 100%;
             height: 100%;
@@ -146,11 +146,9 @@ export const SocialStyle = styled.div `
 const iconsocial = `
     width: 18px;
     height: 18px;
-    border: 2px solid #808080;
+    border: 2px solid;
     border-radius: 38px 38px;
     transition: all 0.6s;
-    color: #808080;
-  
 `
 
 export const FaceWrapper = styled(Icons.Facebook) `
@@ -158,8 +156,8 @@ export const FaceWrapper = styled(Icons.Facebook) `
 
     &:hover{
         
-        color: #3b5998;
-        border: 2px solid #3b5998;
+        color: ${({ theme }) => theme.colors.fbColor};
+        border: 2px solid ${({ theme }) => theme.colors.fbColor};
     }
 `
 
@@ -168,18 +166,22 @@ export const TwitterWrapper = styled(Icons.Twitter) `
 
     &:hover{
         
-        color: #1da1f2;
-        border: 2px solid #1da1f2;
+        color: ${({ theme }) => theme.colors.twColor};
+        border: 2px solid ${({ theme }) => theme.colors.twColor};
     }
 `
 
 export const InstaWrapper = styled(Icons.Instagram) `
     iconsocial: ${iconsocial};
+    width: 18px;
+    height: 18px;
+    border: 2px solid;
+    border-radius: 38px 38px;
 
     &:hover{
         
-        color: #e95950;
-        border: 2px solid #e95950;
+        color: ${({ theme }) => theme.colors.instaColor};
+        border: 2px solid ${({ theme }) => theme.colors.instaColor};
     }
 `
 
@@ -188,8 +190,8 @@ export const BehanceWrapper = styled(Icons.Behance) `
 
     &:hover{
         
-        color: #053eff;
-        border: 2px solid #053eff;
+        color: ${({ theme }) => theme.colors.behaColor};
+        border: 2px solid ${({ theme }) => theme.colors.behaColor};
     }
 `
 
@@ -198,7 +200,7 @@ export const DribbbleWrapper = styled(Icons.Dribbble) `
 
     &:hover{
         
-        color: #ea4c89 ;
-        border: 2px solid #ea4c89;
+        color: ${({ theme }) => theme.colors.dribbbColor};
+        border: 2px solid ${({ theme }) => theme.colors.dribbbColor};
     }
 `

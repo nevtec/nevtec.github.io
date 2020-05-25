@@ -5,6 +5,5 @@ export const LogoWrapper = styled.div `
 
     font-family: "montserrat-bold-webfont";
     font-size: 28px;
-    color: #fff;
-
+    color: ${({ theme }) => theme.colors.whiteDefault};
 `

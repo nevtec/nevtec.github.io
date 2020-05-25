@@ -16,13 +16,13 @@ export const ScrollStyled = styled.div`
   a {
     font-family: "montserrat-bold-webfont";
     text-decoration: none;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.whiteDefault};
     text-transform: uppercase;
     font-size: 12px;
     transition: all 0.6s;
 
     &:hover {
-      color: #345cc6;
+      color: ${({ theme }) => theme.colors.blueDefault};
       cursor: pointer;
     }
   }
@@ -33,7 +33,7 @@ export const ScrollStyled = styled.div`
     position: absolute;
     right: -20px;
     bottom: -152px;
-    background-color: #345cc6;
+    background-color: ${({ theme }) => theme.colors.blueDefault};
   }
 
   .line2 {
@@ -42,7 +42,7 @@ export const ScrollStyled = styled.div`
     position: absolute;
     right: -20px;
     bottom: -148px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.whiteDefault};
   }
 
   @media (max-width: 1315px) {

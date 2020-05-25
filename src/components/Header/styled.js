@@ -37,7 +37,7 @@ export const HeaderWrapper = styled.div `
 
     h1{
         font-size: 56px;
-        color: #fff;
+        color: ${({ theme }) => theme.colors.whiteDefault};
         margin-top: 0;
         line-height: 76px;
     }
@@ -101,16 +101,16 @@ export const BtnHeader = styled.div `
 
     button{
         background: none;
-        color: #fff;
-        border: 2px solid #fff;
+        color: ${({ theme }) => theme.colors.whiteDefault};
+        border: 2px solid ${({ theme }) => theme.colors.whiteDefault};
         padding: 18px 46px;
         text-transform: uppercase;
         cursor: pointer;
         transition: all 0.6s;
 
         &:hover{
-            background: #fff;
-            color: #000;
+            background: ${({ theme }) => theme.colors.whiteDefault};
+            color: ${({ theme }) => theme.colors.writeHove};
         }
     }  
     
