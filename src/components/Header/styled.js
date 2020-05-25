@@ -29,13 +29,15 @@ export const HeaderWrapper = styled.div `
     padding-top: 228px;
     
     h3{
-        color: rgba(255,255,255,.5);
+        font-family: ${({ theme }) => theme.fonts.montBold};
         font-size: 16px;
+        color: ${({ theme }) => theme.colors.grayTittle};
         margin: 0;
         line-height: 46px;
     }
 
     h1{
+        font-family: ${({ theme }) => theme.fonts.montRegular};
         font-size: 56px;
         color: ${({ theme }) => theme.colors.whiteDefault};
         margin-top: 0;

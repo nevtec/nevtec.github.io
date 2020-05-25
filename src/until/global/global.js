@@ -7,6 +7,7 @@ import montserratRegular from '../../fonts/montserrat/montserrat-regular-webfont
 import montserratSemibold from '../../fonts/montserrat/montserrat-semibold-webfont.woff2';
 
 const GlobalStyle = createGlobalStyle`
+
   body {
     margin: 0;
     padding: 0;
@@ -14,33 +15,27 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "montserratBold";
-    src: local('montetBold'),
-    url(${montserratBold}) format('woff2'),
+    src: url(${montserratBold});
   }
 
   @font-face {
     font-family: "montserratLight";
-    src: local('monteLight'),
-    url(${montserratLight}) format('woff2'),
+    src: url(${montserratLight});
   }
 
   @font-face {
     font-family: "montserratMedium";
-    src: local('montetMedium'),
-    url(${montserratMedium}) format('woff2'),
+    src: url(${montserratMedium});
   }
-
 
   @font-face {
     font-family: "montserratRegular";
-    src: local('monteRegular'),
-    url(${montserratRegular}) format('woff2'),
+    src: url(${montserratRegular});
   }
 
   @font-face {
     font-family: "montserratSemibold";
-    src: local('monteSemibold'),
-    url(${montserratSemibold}) format('woff2'),
+    src: url(${montserratSemibold})
   }
 
 `

@@ -2,23 +2,17 @@ import styled from "styled-components"
 import montserrat from "../../fonts/montserrat/montserrat-regular-webfont.woff2"
 
 export const ScrollStyled = styled.div`
-  @font-face {
-    font-family: "montserrat-regular-webfont";
-    src: url(${montserrat});
-  }
-
-  font-family: "montserrat-regular-webfont";
   position: absolute;
   z-index: 3;
   bottom: -186px;
   right: 68px;
 
   a {
-    font-family: "montserrat-bold-webfont";
+    font-family: ${({ theme }) => theme.fonts.montBold};
     text-decoration: none;
     color: ${({ theme }) => theme.colors.whiteDefault};
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     transition: all 0.6s;
 
     &:hover {

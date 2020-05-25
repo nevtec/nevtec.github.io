@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import GlobalStyle from '../../until/global/globalStyled.js'
-
 import Icons from "../Icons"
 
 export const MediaWrapper = styled.nav`
@@ -22,7 +20,7 @@ export const MediaWrapper = styled.nav`
       display: block;
       width: 100%;
       height: 100%;
-      font-family: "montserrat-regular-webfont";
+      font-family: ${({ theme }) => theme.fonts.montRegular};
 
       span {
         opacity: 0;

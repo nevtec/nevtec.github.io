@@ -4,11 +4,6 @@ import montserratlight from '../../fonts/montserrat/montserrat-light-webfont.wof
 import Icons from '../Icons';
 
 export const BtnMenu = styled.label `
-    @font-face {
-        font-family: "montserrat-regular-webfont";
-        src: url(${montserrat});
-    }
-
     height: 40px;
     background-color: ${({ theme }) => theme.colors.bgBtnMenu};
     position: fixed;
@@ -21,7 +16,7 @@ export const BtnMenu = styled.label `
     z-index: 99;
 
     span{
-        font-family: "montserrat-regular-webfont";
+        font-family: ${({ theme }) => theme.fonts.montRegular};
         font-size: 16px;
         text-transform: uppercase;
         color: ${({ theme }) => theme.colors.blueDefault};
@@ -50,12 +45,7 @@ export const Gerald = styled.div `
 `
 
 export const SideMenu = styled.div `
-    @font-face {
-        font-family: "montserrat-regular-webfont";
-        src: url(${montserrat});
-    }
-
-    font-family: "montserrat-regular-webfont";
+    font-family: ${({ theme }) => theme.fonts.montRegular};
     color: ${({ theme }) => theme.colors.whiteDefault};
     background-color: ${({ theme }) => theme.colors.bgMenu};
     width: 280px;
@@ -96,14 +86,9 @@ export const SideMenu = styled.div `
 `
 
 export const TextMenu = styled.div `
-    @font-face {
-        font-family: "montserrat-light-webfont";
-        src: url(${montserratlight});
-    }
-
+    font-family: ${({ theme }) => theme.fonts.montLight};
     width: 198px;
     margin-top: 26px;
-    font-family: "montserrat-light-webfont";
 
     p{
         color: ${({ theme }) => theme.colors.grayText};
