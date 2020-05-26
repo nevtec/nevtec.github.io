@@ -1,15 +1,9 @@
 import styled from "styled-components";
-import montserrat from '../../fonts/montserrat/montserrat-semibold-webfont.woff2'
+
 
 export const LogoWrapper = styled.div `
 
-    @font-face {
-        font-family: "montserrat-bold-webfont";
-        src: url(${montserrat});
-    }
-
-    font-family: "montserrat-bold-webfont";
+    font-family: ${({ theme }) => theme.fonts.montBold};
     font-size: 28px;
-    color: #fff;
-
+    color: ${({ theme }) => theme.colors.whiteDefault};
 `

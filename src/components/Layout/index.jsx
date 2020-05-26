@@ -1,11 +1,13 @@
-import React from "react"
-import "./layout.css"
+import React from "react";
+import GlobalStyle from '../../until/global/global.js';
 
 const Layout = ({ children }) => {
   return (
-    <>  
-        <main>{children}</main>
+    <>
+      <GlobalStyle />
+          <main>{children}</main>
     </>
   )
 }
+
 export default Layout

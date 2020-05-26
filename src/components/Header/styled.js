@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from '../../images/back.jpg';
-import montserrat from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
+
 
 export const SectionHeader = styled.section `
     width: 100%;
@@ -12,22 +12,7 @@ export const SectionHeader = styled.section `
     opacity: .9;
     display: flex;
     padding-bottom: 138px;
-
-    @font-face {
-        font-family: "montserrat-regular-webfont";
-        src: url(${montserrat});
-    }
 `
-
-/*export const HeaderShadow = styled.div `
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 133%;
-    opacity: .6;
-    background-color: #000000;
-`*/
 
 export const PositionLogo = styled.div `
     max-width: 10%;
@@ -44,15 +29,17 @@ export const HeaderWrapper = styled.div `
     padding-top: 228px;
     
     h3{
-        color: rgba(255,255,255,.5);
+        font-family: ${({ theme }) => theme.fonts.montBold};
         font-size: 16px;
+        color: ${({ theme }) => theme.colors.grayTittle};
         margin: 0;
         line-height: 46px;
     }
 
     h1{
+        font-family: ${({ theme }) => theme.fonts.montRegular};
         font-size: 56px;
-        color: #fff;
+        color: ${({ theme }) => theme.colors.whiteDefault};
         margin-top: 0;
         line-height: 76px;
     }
@@ -116,16 +103,16 @@ export const BtnHeader = styled.div `
 
     button{
         background: none;
-        color: #fff;
-        border: 2px solid #fff;
+        color: ${({ theme }) => theme.colors.whiteDefault};
+        border: 2px solid ${({ theme }) => theme.colors.whiteDefault};
         padding: 18px 46px;
         text-transform: uppercase;
         cursor: pointer;
         transition: all 0.6s;
 
         &:hover{
-            background: #fff;
-            color: #000;
+            background: ${({ theme }) => theme.colors.whiteDefault};
+            color: ${({ theme }) => theme.colors.writeHove};
         }
     }  
     
@@ -143,65 +130,6 @@ export const BtnHeader = styled.div `
 
     @media (max-width: 600px){
         padding-top: 10px;
-    }
-
-`
-
-export const ScrollD = styled.div `
-    position: absolute;
-    z-index: 3;
-    bottom: -186px;
-    right: 68px;
-    
-    a{
-        font-family: "montserrat-bold-webfont";
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 12px;
-        transition: all 0.6s;
-
-        &:hover{
-            color: #345cc6;
-            cursor: pointer;
-        }
-    }
-
-    div{
-        width: 2px;
-        height: 162px;
-        position: absolute;
-        right: -20px;
-        bottom: -152px;
-        background-color: #1e8bc3;
-    }
-
-    @media (max-width: 1315px){
-        bottom: -165px;
-    }
-
-    @media (max-width: 930px){
-        bottom: -106px;
-    }
-
-    @media (max-width: 783px){
-        bottom: -250px;
-    }
-
-    @media (max-width: 720px){
-        bottom: -174px;
-    }
-
-    @media (max-width: 672px){
-        bottom: -258px;
-    }
-
-    @media (max-width: 600px){
-        bottom: -62px;
-    }
-
-    @media (max-width: 500px){
-        bottom: -32px;
     }
 
 `
