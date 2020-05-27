@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import montserrat from "../../fonts/montserrat/montserrat-regular-webfont.woff2"
 
 export const ScrollStyled = styled.div`
   position: absolute;

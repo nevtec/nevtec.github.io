@@ -39,10 +39,6 @@ export const MediaWrapper = styled.nav`
     }
   }
 
-  @media (max-width: 930px) {
-    top: 198px;
-  }
-
   @media (max-width: 783px) {
     bottom: -106px;
   }

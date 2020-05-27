@@ -13,6 +13,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   @font-face {
     font-family: "montserratBold";
     src: url(${montserratBold});

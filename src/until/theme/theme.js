@@ -1,5 +1,22 @@
+const MAX_WIDTH = '1255px';
 
 const theme = {
+  setContainer: () => `
+    max-width: ${MAX_WIDTH};
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `,
+
+  breakpoints: {
+    tablet: "1114px",
+  },
+
   colors: {
     whiteDefault: "#fff",
     blueDefault: "#1e8bc3",
@@ -23,7 +40,7 @@ const theme = {
     montMedium: "montserratMedium",
     montRegular: "montserratRegular",
     montSemibold: "montserratSemibold",
-  }
+  },
 }
 
 export default theme

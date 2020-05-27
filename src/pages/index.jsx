@@ -8,7 +8,6 @@ const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <Layout>
       <Header />
-      
     </Layout>
   </ThemeProvider>
 )

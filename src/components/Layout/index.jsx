@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-          <main>{children}</main>
+        <main>{children}</main>
     </>
   )
 }
