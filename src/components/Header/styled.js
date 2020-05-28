@@ -51,11 +51,40 @@ export const HeaderWrapper = styled.div `
         line-height: 76px;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}){
+    ${({ theme }) => theme.media.tablet`
         h1{
-            color: red;
+            font-size: 48px;
+            line-height: 66px;
         }
-    }
+    `}
+
+    ${({ theme }) => theme.media.phone`
+
+        h3{
+            font-size: 14px;
+            margin: 0;
+            line-height: 36px; 
+        }
+
+        h1{
+            font-size: 38px;
+            line-height: 56px;
+        }
+    `}
+
+    ${({ theme }) => theme.media.smallPhone`
+        text-align: center;
+        text-align: -webkit-center;
+        padding-top: 30px;
+        width: 92%;
+
+        h1{
+            width: initial;
+            font-size: 30px;
+            line-height: 48px;
+        }
+    `}
+    
 `
 
 export const BtnHeader = styled.div `
@@ -79,22 +108,18 @@ export const BtnHeader = styled.div `
             background: ${({ theme }) => theme.colors.whiteDefault};
             color: ${({ theme }) => theme.colors.writeHove};
         }
-    }  
-    
-    @media (max-width: 783px){
+    } 
+
+    ${({ theme }) => theme.media.smallPhone`
         flex-direction: column;
+        padding-top: 10px;
+        margin: auto;
 
         button{
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
-    }
-
-    @media (max-width: 720px){
-        padding-top: 20;
-    }
-
-    @media (max-width: 600px){
-        padding-top: 10px;
-    }
+    `} 
+    
+    
 
 `

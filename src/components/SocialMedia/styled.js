@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import Icons from "../Icons"
+import styled from "styled-components";
+import Icons from "../Icons";
 
 export const MediaWrapper = styled.nav`
   color: ${({ theme }) => theme.colors.whiteDefault};
@@ -39,13 +39,13 @@ export const MediaWrapper = styled.nav`
     }
   }
 
-  @media (max-width: 783px) {
-    bottom: -106px;
-  }
+  ${({ theme }) => theme.media.phone`
+      top: 266px;
+  `}
 
-  @media (max-width: 720px) {
+  ${({ theme }) => theme.media.smallPhone`
     display: none;
-  }
+  `}
 `
 
 const iconsocial = `

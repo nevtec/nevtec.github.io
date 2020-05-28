@@ -1,4 +1,17 @@
+const RELATIVE_UNIT_BASE = 16;
 const MAX_WIDTH = '1255px';
+
+const breakpoints = {
+  tablet: 960,
+  phone: 768,
+  smallPhone: 540,
+};
+
+const generateBreakpoint = (width, cssMarkup) => `
+  @media (max-width: ${width / RELATIVE_UNIT_BASE}em) {
+    ${cssMarkup};
+  }
+`;
 
 const theme = {
   setContainer: () => `
@@ -12,10 +25,6 @@ const theme = {
     flex-direction: column;
     align-items: center;
   `,
-
-  breakpoints: {
-    tablet: "1114px",
-  },
 
   colors: {
     whiteDefault: "#fff",
@@ -41,6 +50,13 @@ const theme = {
     montRegular: "montserratRegular",
     montSemibold: "montserratSemibold",
   },
+
+  generateBreakpoint,
+  media: Object.keys(breakpoints).reduce((acc, label) => {
+    acc[label] = (...args) => generateBreakpoint(breakpoints[label], args);
+    return acc;
+  }, {}),
+
 }
 
 export default theme

@@ -31,10 +31,10 @@ const Header = () => (
             <button>more about us</button>
           </Styled.BtnHeader>
       </Styled.HeaderWrapper>
-      
-      <ScrollDown />
 
-    </Styled.ContainerHeader>    
+    </Styled.ContainerHeader>
+    
+    <ScrollDown />
 
   </Styled.SectionHeader>
 )

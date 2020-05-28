@@ -1,5 +1,5 @@
-import React from "react"
-import * as Styled from './styled'
+import React from "react";
+import * as Styled from './styled';
 
 const Logo = () => (
   <Styled.LogoWrapper>
@@ -7,4 +7,4 @@ const Logo = () => (
   </Styled.LogoWrapper>
 )
 
-export default Logo
+export default Logo;
