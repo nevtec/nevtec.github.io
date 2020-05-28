@@ -10,7 +10,6 @@ const IndexPage = () => (
     <Layout>
       <Header />
       <About />
-      
     </Layout>
   </ThemeProvider>
 )

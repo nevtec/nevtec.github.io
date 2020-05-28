@@ -14,83 +14,77 @@ export const SectionHeader = styled.section `
     padding-bottom: 138px;
 `
 
+export const ContainerHeader = styled.div `
+    ${ ({ theme }) => theme.setContainer()};
+`
+
 export const PositionLogo = styled.div `
     max-width: 10%;
-    padding: 38px;
+    margin-right: auto;
+    padding: 38px 0;
     z-index: 2;
 `
 
 export const HeaderWrapper = styled.div `
-    
 
-    max-width: 55%;
-    font-family: "montserrat-bold-webfont";
+    width: 94%;
+    max-width: 1000px;
     position: relative;
-    padding-top: 228px;
+    padding-top: 114px;
+    margin: 0 auto;
     
     h3{
-        font-family: ${({ theme }) => theme.fonts.montBold};
-        font-size: 16px;
+        font-family: ${({ theme }) => theme.fonts.montLight};
         color: ${({ theme }) => theme.colors.grayTittle};
+        font-size: 16px;
         margin: 0;
         line-height: 46px;
+        letter-spacing: 2px;
     }
 
     h1{
         font-family: ${({ theme }) => theme.fonts.montRegular};
-        font-size: 56px;
         color: ${({ theme }) => theme.colors.whiteDefault};
+        font-size: 58px;
+        width: 76%;
         margin-top: 0;
         line-height: 76px;
     }
 
-    @media (max-width: 1315px){
+    ${({ theme }) => theme.media.tablet`
         h1{
-            font-size: 43px;
+            font-size: 48px;
+            line-height: 66px;
         }
-    }
+    `}
 
-    @media (max-width: 1014px){
-        max-width: 60%;
-    }
+    ${({ theme }) => theme.media.phone`
 
-    @media (max-width: 930px){
-        padding-top: 150px;
-
-        h1{
-            font-size: 36px; 
-        }
-    }
-
-    @media (max-width: 720px){
-        max-width: 70%;
-        margin-left: -44px;
-        text-align: center;
-
-        h1{
-            line-height: 68px;
-        }
-    }
-
-    @media (max-width: 600px){
-        h1{
-            font-size: 32px;
-            line-height: 57px;
-        }
-    }
-
-    @media (max-width: 500px){
         h3{
-            line-height: 40px;
             font-size: 14px;
+            margin: 0;
+            line-height: 36px; 
         }
 
         h1{
-            font-size: 26px;
-            line-height: 50px;
+            font-size: 38px;
+            line-height: 56px;
         }
-    }
+    `}
 
+    ${({ theme }) => theme.media.smallPhone`
+        text-align: center;
+        text-align: -webkit-center;
+        padding-top: 30px;
+        width: 92%;
+
+        h1{
+            width: initial;
+            font-size: 30px;
+            line-height: 48px;
+        }
+    `}
+    
 `
 
 export const BtnHeader = styled.div `
@@ -114,30 +108,18 @@ export const BtnHeader = styled.div `
             background: ${({ theme }) => theme.colors.whiteDefault};
             color: ${({ theme }) => theme.colors.writeHove};
         }
-    }  
-    
-    @media (max-width: 783px){
+    } 
+
+    ${({ theme }) => theme.media.smallPhone`
         flex-direction: column;
+        padding-top: 10px;
+        margin: auto;
 
         button{
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
-    }
-
-    @media (max-width: 720px){
-        padding-top: 20;
-    }
-
-    @media (max-width: 600px){
-        padding-top: 10px;
-    }
-
-`
-
-export const MenuSection = styled.div `
-
-`
-
-export const SocialSection = styled.div `
+    `} 
+    
+    
 
 `

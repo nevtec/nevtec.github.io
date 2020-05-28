@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import montserrat from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
-import montserratlight from '../../fonts/montserrat/montserrat-light-webfont.woff2';
 import Icons from '../Icons';
 
 export const BtnMenu = styled.label `

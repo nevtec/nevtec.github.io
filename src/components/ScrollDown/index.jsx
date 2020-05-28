@@ -1,14 +1,15 @@
-import React from "react"
-import * as Styled from './styled'
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import React from "react";
+import * as Styled from './styled';
 
 const ScrollBtn = () => (
     <Styled.ScrollStyled>
-        <a onClick={() => scrollTo('#About')}>Scroll Down</a>
-      <div className="line1"></div>
-      <div className="line2"></div>
+      <a href="./">Scroll Down</a>
+      <Styled.PositionLine>
+        <div className="line1"></div>
+        <div className="line2"></div>
+      </Styled.PositionLine>
     </Styled.ScrollStyled>
 
 )
 
-export default ScrollBtn
+export default ScrollBtn;

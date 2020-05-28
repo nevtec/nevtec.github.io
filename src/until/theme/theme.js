@@ -1,5 +1,31 @@
+const RELATIVE_UNIT_BASE = 16;
+const MAX_WIDTH = '1255px';
+
+const breakpoints = {
+  tablet: 960,
+  phone: 768,
+  smallPhone: 540,
+};
+
+const generateBreakpoint = (width, cssMarkup) => `
+  @media (max-width: ${width / RELATIVE_UNIT_BASE}em) {
+    ${cssMarkup};
+  }
+`;
 
 const theme = {
+  setContainer: () => `
+    max-width: ${MAX_WIDTH};
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `,
+
   colors: {
     whiteDefault: "#fff",
     blueDefault: "#1e8bc3",
@@ -23,7 +49,14 @@ const theme = {
     montMedium: "montserratMedium",
     montRegular: "montserratRegular",
     montSemibold: "montserratSemibold",
-  }
+  },
+
+  generateBreakpoint,
+  media: Object.keys(breakpoints).reduce((acc, label) => {
+    acc[label] = (...args) => generateBreakpoint(breakpoints[label], args);
+    return acc;
+  }, {}),
+
 }
 
 export default theme

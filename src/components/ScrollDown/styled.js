@@ -1,5 +1,4 @@
-import styled from "styled-components"
-import montserrat from "../../fonts/montserrat/montserrat-regular-webfont.woff2"
+import styled from "styled-components";
 
 export const ScrollStyled = styled.div`
   position: absolute;
@@ -20,81 +19,79 @@ export const ScrollStyled = styled.div`
       cursor: pointer;
     }
   }
+  
+  @media (max-width: 1085px) {
+    bottom: -260px;
+  }
+
+  @media (max-width: 966px) {
+    bottom: -336px;
+  }
+
+  ${({ theme }) => theme.media.tablet`
+    bottom: -136px;
+  `}
+
+  @media (max-width: 911px) {
+    bottom: -202px;
+  }
+
+  @media (max-width: 813px) {
+    bottom: -268px;
+  }
+
+  ${({ theme }) => theme.media.phone`
+    bottom: -78px;
+  `}
+
+  @media (max-width: 737px) {
+    bottom: -133px;
+  }
+
+  @media (max-width: 659px) {
+    bottom: -190px;
+  }
+
+  @media (max-width: 559px) {
+    bottom: -246px;
+  }
+
+  ${({ theme }) => theme.media.smallPhone`
+    bottom: 2px;
+  `}
+
+  @media (max-width: 414px) {
+    bottom: 28px;
+  }
+
+  @media (max-width: 411px) {
+    bottom: 115px;
+  }
+
+  @media (max-width: 375px) {
+    bottom: -44px;
+  }
+
+  @media (max-width: 320px) {
+    bottom: -236px;
+  }
+  
+`
+export const PositionLine = styled.div`
+  position: absolute;
+  right: -20px;
+  bottom: -146px;
 
   .line1 {
     width: 2px;
-    height: 162px;
-    position: absolute;
-    right: -20px;
-    bottom: -152px;
+    height: 80px;
+    
     background-color: ${({ theme }) => theme.colors.blueDefault};
   }
 
   .line2 {
     width: 2px;
-    height: 82px;
-    position: absolute;
-    right: -20px;
-    bottom: -148px;
+    height: 80px;
     background-color: ${({ theme }) => theme.colors.whiteDefault};
-  }
-
-  @media (max-width: 1315px) {
-    bottom: -165px;
-
-    .line2 {
-      bottom: -159px;
-    }
-  }
-
-  @media (max-width: 930px) {
-    bottom: -106px;
-
-    .line2 {
-      bottom: -134px;
-    }
-  }
-
-  @media (max-width: 783px) {
-    bottom: -250px;
-
-    .line2 {
-      bottom: -142px;
-    }
-  }
-
-  @media (max-width: 720px) {
-    bottom: -174px;
-
-    .line2 {
-      bottom: -76px;
-      height: 48px;
-    }
-  }
-
-  @media (max-width: 672px) {
-    bottom: -258px;
-
-    .line2 {
-      bottom: -42px;
-      height: 30px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    bottom: -132px;
-
-    .line2 {
-      bottom: -102px;
-      height: 62px;
-    }
-  }
-
-  @media (max-width: 533px) {
-    bottom: -189px;
-  }
-
-  @media (max-width: 500px) {
-    bottom: -36px;
-  }
+  } 
 `
