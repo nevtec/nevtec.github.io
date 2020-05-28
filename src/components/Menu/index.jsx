@@ -17,22 +17,22 @@ const Menu = () => (
         <nav>
             <ul>
               <li>
-                <a onClick={() => scrollTo('#Header')}>Home</a>
+                <a onClick={() => scrollTo('./')}>Home</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('#About')}>About</a>
+                <a onClick={() => scrollTo('./')}>About</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('#')}>Services</a>
+                <a onClick={() => scrollTo('./')}>Services</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('#')}>Works</a>
+                <a onClick={() => scrollTo('./')}>Works</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('#')}>Clients</a>
+                <a onClick={() => scrollTo('./')}>Clients</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('#')}>Contact</a>
+                <a onClick={() => scrollTo('./')}>Contact</a>
               </li>
             </ul>
         </nav>
@@ -48,27 +48,27 @@ const Menu = () => (
         <Styled.SocialStyle>
           <ul>
             <li>
-              <a href="#">
+              <a href="./">
                 <Styled.FaceWrapper />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./">
                 <Styled.TwitterWrapper />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./">
                 <Styled.InstaWrapper />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./">
                 <Styled.BehanceWrapper />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="./">
                 <Styled.DribbbleWrapper />
               </a>
             </li>

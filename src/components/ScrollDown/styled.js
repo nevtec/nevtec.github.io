@@ -19,7 +19,62 @@ export const ScrollStyled = styled.div`
       cursor: pointer;
     }
   }
+  
+  @media (max-width: 1085px) {
+    bottom: -260px;
+  }
 
+  @media (max-width: 966px) {
+    bottom: -336px;
+  }
+
+  ${({ theme }) => theme.media.tablet`
+    bottom: -136px;
+  `}
+
+  @media (max-width: 911px) {
+    bottom: -202px;
+  }
+
+  @media (max-width: 813px) {
+    bottom: -268px;
+  }
+
+  ${({ theme }) => theme.media.phone`
+    bottom: -78px;
+  `}
+
+  @media (max-width: 737px) {
+    bottom: -133px;
+  }
+
+  @media (max-width: 659px) {
+    bottom: -190px;
+  }
+
+  @media (max-width: 559px) {
+    bottom: -246px;
+  }
+
+  ${({ theme }) => theme.media.smallPhone`
+    bottom: 2px;
+  `}
+
+  @media (max-width: 414px) {
+    bottom: 28px;
+  }
+
+  @media (max-width: 411px) {
+    bottom: 115px;
+  }
+
+  @media (max-width: 375px) {
+    bottom: -44px;
+  }
+
+  @media (max-width: 320px) {
+    bottom: -236px;
+  }
   
 `
 export const PositionLine = styled.div`
@@ -37,63 +92,6 @@ export const PositionLine = styled.div`
   .line2 {
     width: 2px;
     height: 80px;
-    background-color: red;
-  }
-
-  @media (max-width: 1085px) {
-    bottom: -220px;
-  }
-
-  @media (max-width: 966px) {
-    bottom: -296px;
-  }
-
-  ${({ theme }) => theme.media.tablet`
-    bottom: -98px;
-  `}
-
-  @media (max-width: 911px) {
-    bottom: -164px;
-  }
-
-  @media (max-width: 813px) {
-    bottom: -228px;
-  }
-
-  ${({ theme }) => theme.media.phone`
-    bottom: -40px;
-  `}
-
-  @media (max-width: 737px) {
-    bottom: -94px;
-  }
-
-  @media (max-width: 659px) {
-    bottom: -150px;
-  }
-
-  @media (max-width: 559px) {
-    bottom: -206px;
-  }
-
-  ${({ theme }) => theme.media.smallPhone`
-    bottom: 40px;
-  `}
-
-  @media (max-width: 414px) {
-    bottom: 65px; 
-  }
-
-  @media (max-width: 411px) {
-    bottom: 152px; 
-  }
-
-  @media (max-width: 375px) {
-    bottom: -2px;
-  }
-
-  @media (max-width: 320px) {
-    bottom: -197px;
-  }
-
+    background-color: ${({ theme }) => theme.colors.whiteDefault};
+  } 
 `
