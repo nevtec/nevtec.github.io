@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalStyle from '../../until/global/global.js';
+import GlobalStyle from '../../utils/global/global.js';
 
 const Layout = ({ children }) => {
   return (

@@ -1,12 +1,14 @@
 import React from "react";
-import * as Styled from './styled';
+
 import Logo from '../Logo/';
 import Menu from '../Menu/';
 import SocialMedia from '../SocialMedia';
 import ScrollDown from '../ScrollDown/index';
 
+import * as Styled from './styled';
+
 const Header = () => (
-  <Styled.SectionHeader >
+  <Styled.SectionHeader>
     
     <Menu />
     <SocialMedia />
@@ -18,18 +20,18 @@ const Header = () => (
       </Styled.PositionLogo>
 
       <Styled.HeaderWrapper>
-          <h3>
-            WELCOME TO NEVTEC
-          </h3>
           <h1>
+            WELCOME TO NEVTEC
+          </h1>
+          <h3>
             We are a creative group of nevinhosos who design 
             influential brands and digital experiences.
-          </h1>
+          </h3>
 
-          <Styled.BtnHeader>
+          <Styled.BtnContainer>
             <button>start a project</button>
             <button>more about us</button>
-          </Styled.BtnHeader>
+          </Styled.BtnContainer>
       </Styled.HeaderWrapper>
 
     </Styled.ContainerHeader>
