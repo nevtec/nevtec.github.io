@@ -6,21 +6,21 @@ import Menu from '../Menu/';
 import SocialMedia from '../SocialMedia';
 import ScrollDown from '../ScrollDown/index';
 
-import * as Styled from './styled';
+import {SectionHeader, ContainerHeader, PositionLogo, HeaderWrapper, BtnContainer, testeScroll} from './styled';
 
 const Header = () => (
-  <Styled.SectionHeader id="Header">
+  <SectionHeader id="Header">
     
     <Menu />
     <SocialMedia />
 
-    <Styled.ContainerHeader>
+    <ContainerHeader>
 
-      <Styled.PositionLogo>
+      <PositionLogo>
         <Logo />
-      </Styled.PositionLogo>
+      </PositionLogo>
 
-      <Styled.HeaderWrapper>
+      <HeaderWrapper>
           <h1>
             WELCOME TO NEVTEC
           </h1>
@@ -29,17 +29,20 @@ const Header = () => (
             influential brands and digital experiences.
           </h3>
 
-          <Styled.BtnContainer>
-            <button>start a project</button>
-            <button onClick={() => scrollTo('')}>more about us</button>
-          </Styled.BtnContainer>
-      </Styled.HeaderWrapper>
+          <BtnContainer>
+            <button onClick={() => scrollTo('#Header')}>start a project</button>
+            <button onClick={() => scrollTo('#About')}>more about us</button>
+          </BtnContainer>
+      </HeaderWrapper>
 
-    </Styled.ContainerHeader>
+    </ContainerHeader>
     
-    <ScrollDown />
+    <testeScroll>
+        <a>teste</a>
+    </testeScroll>
+    {/* <ScrollDown /> */}
 
-  </Styled.SectionHeader>
+  </SectionHeader>
 )
 
 export default Header

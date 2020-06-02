@@ -1,20 +1,18 @@
 import React from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import SocialMedia from '../SocialMedia';
-
-import * as Styled from './styled';
+import {Gerald, BtnMenu, SideMenu, TextMenu, SocialStyle, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper} from './styled';
 
 const Menu = () => (
-  <Styled.Gerald>
+  <Gerald>
 
-    <Styled.BtnMenu for="bt_menu">
+    <BtnMenu for="bt_menu">
         <span>Menu</span>
         &#9776;
-    </Styled.BtnMenu>
+    </BtnMenu>
     <input type="checkbox" id="bt_menu" />
 
-    <Styled.SideMenu className="menu">
+    <SideMenu className="menu">
       <div>
         <nav>
             <ul>
@@ -39,49 +37,49 @@ const Menu = () => (
             </ul>
         </nav>
 
-        <Styled.TextMenu>
+        <TextMenu>
           <p>
           Perspiciatis hic praesentium nesciunt. Et neque a dolorum <span>voluptatem </span>  
           porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis 
           neque reprehenderit.
           </p>
-        </Styled.TextMenu>
+        </TextMenu>
 
-        <Styled.SocialStyle>
+        <SocialStyle>
           <ul>
             <li>
               <a href="./">
-                <Styled.FaceWrapper />
+                <FaceWrapper />
               </a>
             </li>
             <li>
               <a href="./">
-                <Styled.TwitterWrapper />
+                <TwitterWrapper />
               </a>
             </li>
             <li>
               <a href="./">
-                <Styled.InstaWrapper />
+                <InstaWrapper />
               </a>
             </li>
             <li>
               <a href="./">
-                <Styled.BehanceWrapper />
+                <BehanceWrapper />
               </a>
             </li>
             <li>
               <a href="./">
-                <Styled.DribbbleWrapper />
+                <DribbbleWrapper />
               </a>
             </li>
           </ul>
-        </Styled.SocialStyle>
+        </SocialStyle>
 
       </div>
 
-    </Styled.SideMenu>
+    </SideMenu>
 
-  </Styled.Gerald>
+  </Gerald>
 )
 
 export default Menu;

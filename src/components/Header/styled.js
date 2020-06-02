@@ -112,3 +112,10 @@ export const BtnContainer = styled.div `
         }
     `} 
 `
+
+export const testeScroll = styled.div`
+    color: red;
+    position: relative;
+    bottom: -186px;
+    right: 68px;
+`

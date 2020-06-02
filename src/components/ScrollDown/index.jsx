@@ -1,14 +1,14 @@
 import React from "react";
-import * as Styled from './styled';
+import {ScrollStyled, PositionLine} from './styled';
 
 const ScrollBtn = () => (
-    <Styled.ScrollStyled>
+    <ScrollStyled>
       <a href="./">Scroll Down</a>
-      <Styled.PositionLine>
+      <PositionLine>
         <div className="line1"></div>
         <div className="line2"></div>
-      </Styled.PositionLine>
-    </Styled.ScrollStyled>
+      </PositionLine>
+    </ScrollStyled>
 
 )
 

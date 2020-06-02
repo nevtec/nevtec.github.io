@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const LogoWrapper = styled.div `
 
     font-family: ${({ theme }) => theme.fonts.montBold};

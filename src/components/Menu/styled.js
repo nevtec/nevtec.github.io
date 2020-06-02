@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import Icons from '../Icons';
 
 export const BtnMenu = styled.label `
@@ -135,7 +136,7 @@ const iconsocial = `
 `
 
 export const FaceWrapper = styled(Icons.Facebook) `
-    iconsocial: ${iconsocial};
+    ${iconsocial};
 
     &:hover{
         
@@ -145,7 +146,7 @@ export const FaceWrapper = styled(Icons.Facebook) `
 `
 
 export const TwitterWrapper = styled(Icons.Twitter) `
-    iconsocial: ${iconsocial};
+    ${iconsocial};
 
     &:hover{
         
@@ -155,7 +156,7 @@ export const TwitterWrapper = styled(Icons.Twitter) `
 `
 
 export const InstaWrapper = styled(Icons.Instagram) `
-    iconsocial: ${iconsocial};
+    ${iconsocial};
     width: 18px;
     height: 18px;
     border: 2px solid;
@@ -169,7 +170,7 @@ export const InstaWrapper = styled(Icons.Instagram) `
 `
 
 export const BehanceWrapper = styled(Icons.Behance) `
-    iconsocial: ${iconsocial};
+    ${iconsocial};
 
     &:hover{
         
@@ -179,7 +180,7 @@ export const BehanceWrapper = styled(Icons.Behance) `
 `
 
 export const DribbbleWrapper = styled(Icons.Dribbble) `
-    iconsocial: ${iconsocial};
+    ${iconsocial};
 
     &:hover{
         

@@ -1,10 +1,11 @@
 import React from "react";
-import * as Styled from './styled';
+
+import { LogoWrapper } from './styled';
 
 const Logo = () => (
-  <Styled.LogoWrapper>
+  <LogoWrapper>
       NevTec.
-  </Styled.LogoWrapper>
+  </LogoWrapper>
 )
 
 export default Logo;

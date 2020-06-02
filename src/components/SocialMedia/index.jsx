@@ -1,13 +1,14 @@
 import React from "react";
-import * as Styled from './styled';
+
+import { MediaWrapper, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
 
 const SocialMedia = () => (
-  <Styled.MediaWrapper>
+  <MediaWrapper>
     <ul>
       <li>
         <a href="https://www.facebook.com/" value="media">
           <figure>
-            <Styled.FaceWrapper />
+            <FaceWrapper />
           </figure>
           <span>Facebook</span>
         </a>
@@ -15,7 +16,7 @@ const SocialMedia = () => (
       <li>
         <a href="https://twitter.com/" value="media">
           <figure>
-            <Styled.TwitterWrapper />
+            <TwitterWrapper />
           </figure>
           <span>Twitter</span>
         </a>
@@ -23,7 +24,7 @@ const SocialMedia = () => (
       <li>
         <a href="https://www.instagram.com/" value="media">
           <figure>
-            <Styled.InstaWrapper />
+            <InstaWrapper />
           </figure>
           <span>Instagram</span>
         </a>
@@ -31,7 +32,7 @@ const SocialMedia = () => (
       <li>
         <a href="https://www.behance.net/" value="media">
           <figure>
-            <Styled.BehanceWrapper />
+            <BehanceWrapper />
           </figure>
           <span>Behance</span>
         </a>
@@ -39,13 +40,13 @@ const SocialMedia = () => (
       <li>
         <a href="https://dribbble.com/" value="media">
           <figure>
-            <Styled.DribbbleWrapper />
+            <DribbbleWrapper />
           </figure>
           <span>Dribbble</span>
         </a>
       </li>
     </ul>
-  </Styled.MediaWrapper>
+  </MediaWrapper>
 )
 
 export default SocialMedia;

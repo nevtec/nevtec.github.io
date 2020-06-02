@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import Icons from "../Icons";
 
 export const MediaWrapper = styled.nav`
@@ -61,7 +62,7 @@ const iconsocial = `
 `
 
 export const FaceWrapper = styled(Icons.Facebook)`
-  iconsocial: ${iconsocial};
+  ${iconsocial};
 
   &:hover {
     color: ${({ theme }) => theme.colors.fbColor};
@@ -70,7 +71,7 @@ export const FaceWrapper = styled(Icons.Facebook)`
 `
 
 export const TwitterWrapper = styled(Icons.Twitter)`
-  iconsocial: ${iconsocial};
+  ${iconsocial};
 
   &:hover {
     color: ${({ theme }) => theme.colors.twColor};
@@ -79,7 +80,7 @@ export const TwitterWrapper = styled(Icons.Twitter)`
 `
 
 export const InstaWrapper = styled(Icons.Instagram)`
-  iconsocial: ${iconsocial};
+  ${iconsocial};
   width: 32px; 
   height: 31px; 
   border-radius: 38px;
@@ -91,7 +92,7 @@ export const InstaWrapper = styled(Icons.Instagram)`
 `
 
 export const BehanceWrapper = styled(Icons.Behance)`
-  iconsocial: ${iconsocial};
+  ${iconsocial};
 
   &:hover {
     color: ${({ theme }) => theme.colors.behaColor};
@@ -100,7 +101,7 @@ export const BehanceWrapper = styled(Icons.Behance)`
 `
 
 export const DribbbleWrapper = styled(Icons.Dribbble)`
-  iconsocial: ${iconsocial};
+  ${iconsocial};
 
   &:hover {
     color: ${({ theme }) => theme.colors.dribbbColor};
