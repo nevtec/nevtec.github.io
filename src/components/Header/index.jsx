@@ -1,4 +1,5 @@
 import React from "react";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Logo from '../Logo/';
 import Menu from '../Menu/';
@@ -8,7 +9,7 @@ import ScrollDown from '../ScrollDown/index';
 import * as Styled from './styled';
 
 const Header = () => (
-  <Styled.SectionHeader>
+  <Styled.SectionHeader id="Header">
     
     <Menu />
     <SocialMedia />
@@ -30,7 +31,7 @@ const Header = () => (
 
           <Styled.BtnContainer>
             <button>start a project</button>
-            <button>more about us</button>
+            <button onClick={() => scrollTo('')}>more about us</button>
           </Styled.BtnContainer>
       </Styled.HeaderWrapper>
 

@@ -1,7 +1,9 @@
 import React from "react";
-import * as Styled from './styled';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import SocialMedia from '../SocialMedia';
+
+import * as Styled from './styled';
 
 const Menu = () => (
   <Styled.Gerald>
@@ -17,22 +19,22 @@ const Menu = () => (
         <nav>
             <ul>
               <li>
-                <a onClick={() => scrollTo('./')}>Home</a>
+                <a onClick={() => scrollTo('#Header')}>Home</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('./')}>About</a>
+                <a onClick={() => scrollTo('#About')}>About</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('./')}>Services</a>
+                <a onClick={() => scrollTo('#Services')}>Services</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('./')}>Works</a>
+                <a onClick={() => scrollTo('#Works')}>Works</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('./')}>Clients</a>
+                <a onClick={() => scrollTo('#Clients')}>Clients</a>
               </li>
               <li>
-                <a onClick={() => scrollTo('./')}>Contact</a>
+                <a onClick={() => scrollTo('#Contact')}>Contact</a>
               </li>
             </ul>
         </nav>
