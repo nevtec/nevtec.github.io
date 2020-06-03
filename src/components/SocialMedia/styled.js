@@ -6,52 +6,59 @@ export const MediaWrapper = styled.nav`
   color: ${({ theme }) => theme.colors.whiteDefault};
   position: absolute;
   right: 84px;
-  top: 280px;
+  top: 330px;
   width: 100px;
-
-  li {
-    list-style-type: none;
-    cursor: pointer;
-    position: relative;
-    height: 42px;
-
-    a {
-      text-decoration: none;
-      color: ${({ theme }) => theme.colors.whiteDefault};
-      display: block;
-      width: 100%;
-      height: 100%;
-      font-family: ${({ theme }) => theme.fonts.montRegular};
-
-      span {
-        opacity: 0;
-        font-size: 12px;
-        text-align: right;
-        transition: opacity 0.5s linear;
-        pointer-events: none;
-      }
-
-      &:hover {
-        span {
-          opacity: 1;
-          padding-left: -40%;
-        }
-      }
-    }
-  }
-
-  ${({ theme }) => theme.media.phone`
-      top: 266px;
-  `}
 
   ${({ theme }) => theme.media.smallPhone`
     display: none;
   `}
 `
 
+export const UlMedia = styled.ul`
+
+`
+
+export const LiMedia = styled.li`
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  height: 36px;
+`
+
+export const LinkMedia = styled.a`
+  font-family: ${({ theme }) => theme.fonts.montRegular};
+  color: ${({ theme }) => theme.colors.whiteDefault};
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    span {
+      opacity: 1;
+      left: 0px;
+    }
+  }
+`
+
+export const FigCapsule = styled.figure`
+
+`
+
+export const TitleSocial = styled.span`
+  font-size: 12px;
+  text-align: left;
+  pointer-events: none;
+  transition: opacity 0.6s linear;
+  opacity: 0;
+  position: relative;
+  top: -8px;
+`
+
 const iconsocial = `
-  width: 32px; 
-  height: 31px; 
+  width: 18px;
+  height: 18px;
+  padding: 6px;
   border: 2px solid; 
   border-color: ${({ theme }) => theme.colors.whiteDefault};
   border-radius: 38px; 
@@ -59,6 +66,7 @@ const iconsocial = `
   position: absolute; 
   top: -14px; 
   left: 70px;
+  transition: opacity 0.6s linear;
 `
 
 export const FaceWrapper = styled(Icons.Facebook)`
@@ -81,9 +89,6 @@ export const TwitterWrapper = styled(Icons.Twitter)`
 
 export const InstaWrapper = styled(Icons.Instagram)`
   ${iconsocial};
-  width: 32px; 
-  height: 31px; 
-  border-radius: 38px;
 
   &:hover {
     color: ${({ theme }) => theme.colors.instaColor};

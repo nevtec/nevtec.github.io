@@ -1,51 +1,56 @@
 import React from "react";
 
-import { MediaWrapper, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
+import { MediaWrapper, UlMedia, LiMedia, LinkMedia, FigCapsule, TitleSocial, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
 
 const SocialMedia = () => (
   <MediaWrapper>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/" value="media">
-          <figure>
+    <UlMedia>
+      <LiMedia>
+        <LinkMedia href="https://www.facebook.com/" value="media">
+          <FigCapsule>
             <FaceWrapper />
-          </figure>
-          <span>Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/" value="media">
-          <figure>
+          </FigCapsule>
+          <TitleSocial>Facebook</TitleSocial>
+        </LinkMedia>
+      </LiMedia>
+
+      <LiMedia>
+        <LinkMedia href="https://twitter.com/" value="media">
+          <FigCapsule>
             <TwitterWrapper />
-          </figure>
-          <span>Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/" value="media">
-          <figure>
+          </FigCapsule>
+          <TitleSocial>Twitter</TitleSocial>
+        </LinkMedia>
+      </LiMedia>
+
+      <LiMedia>
+        <LinkMedia href="https://www.instagram.com/" value="media">
+          <FigCapsule>
             <InstaWrapper />
-          </figure>
-          <span>Instagram</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.behance.net/" value="media">
-          <figure>
+          </FigCapsule>
+          <TitleSocial>Instagram</TitleSocial>
+        </LinkMedia>
+      </LiMedia>
+
+      <LiMedia>
+        <LinkMedia href="https://www.behance.net/" value="media">
+          <FigCapsule>
             <BehanceWrapper />
-          </figure>
-          <span>Behance</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://dribbble.com/" value="media">
-          <figure>
+          </FigCapsule>
+          <TitleSocial>Behance</TitleSocial>
+        </LinkMedia>
+      </LiMedia>
+
+      <LiMedia>
+        <LinkMedia href="https://dribbble.com/" value="media">
+          <FigCapsule>
             <DribbbleWrapper />
-          </figure>
-          <span>Dribbble</span>
-        </a>
-      </li>
-    </ul>
+          </FigCapsule>
+          <TitleSocial>Dribbble</TitleSocial>
+        </LinkMedia>
+      </LiMedia>
+
+    </UlMedia>
   </MediaWrapper>
 )
 

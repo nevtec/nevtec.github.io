@@ -1,85 +1,95 @@
 import React from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import {Gerald, BtnMenu, SideMenu, TextMenu, SocialStyle, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper} from './styled';
+import { MenuSection, BtnMenu, MenuName, SideMenu, ContainerMenu, BoxText, TextDescription, Contrast, UlSocial, LiSocial, IconLink, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
+import { Navigation, UnList, List, Link } from '../../components/common/styled';
 
 const Menu = () => (
-  <Gerald>
+  <MenuSection>
 
     <BtnMenu for="bt_menu">
-        <span>Menu</span>
+        <MenuName>Menu</MenuName>
         &#9776;
     </BtnMenu>
+    
     <input type="checkbox" id="bt_menu" />
 
     <SideMenu className="menu">
-      <div>
-        <nav>
-            <ul>
-              <li>
-                <a onClick={() => scrollTo('#Header')}>Home</a>
-              </li>
-              <li>
-                <a onClick={() => scrollTo('#About')}>About</a>
-              </li>
-              <li>
-                <a onClick={() => scrollTo('#Services')}>Services</a>
-              </li>
-              <li>
-                <a onClick={() => scrollTo('#Works')}>Works</a>
-              </li>
-              <li>
-                <a onClick={() => scrollTo('#Clients')}>Clients</a>
-              </li>
-              <li>
-                <a onClick={() => scrollTo('#Contact')}>Contact</a>
-              </li>
-            </ul>
-        </nav>
+      <ContainerMenu>
+        <Navigation>
+            <UnList>
+              <List>
+                <Link onClick={() => scrollTo('#Header')}>Home</Link>
+              </List>
+              <List>
+                <Link onClick={() => scrollTo('#About')}>About</Link>
+              </List>
+              <List>
+                <Link onClick={() => scrollTo('#Services')}>Services</Link>
+              </List>
+              <List>
+                <Link onClick={() => scrollTo('#Works')}>Works</Link>
+              </List>
+              <List>
+                <Link onClick={() => scrollTo('#Clients')}>Clients</Link>
+              </List>
+              <List>
+                <Link onClick={() => scrollTo('#Contact')}>Contact</Link>
+              </List>
+            </UnList>
+        </Navigation>
 
-        <TextMenu>
-          <p>
-          Perspiciatis hic praesentium nesciunt. Et neque a dolorum <span>voluptatem </span>  
+        <BoxText>
+          <TextDescription>
+          Perspiciatis hic praesentium nesciunt. Et neque a dolorum <Contrast>voluptatem </Contrast>  
           porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis 
           neque reprehenderit.
-          </p>
-        </TextMenu>
+          </TextDescription>
+        </BoxText>
 
-        <SocialStyle>
-          <ul>
-            <li>
-              <a href="./">
+        <Navigation>
+
+          <UlSocial>
+
+            <LiSocial>
+              <IconLink href="./">
                 <FaceWrapper />
-              </a>
-            </li>
-            <li>
-              <a href="./">
-                <TwitterWrapper />
-              </a>
-            </li>
-            <li>
-              <a href="./">
-                <InstaWrapper />
-              </a>
-            </li>
-            <li>
-              <a href="./">
-                <BehanceWrapper />
-              </a>
-            </li>
-            <li>
-              <a href="./">
-                <DribbbleWrapper />
-              </a>
-            </li>
-          </ul>
-        </SocialStyle>
+              </IconLink>
+            </LiSocial>
 
-      </div>
+            <LiSocial>
+              <IconLink href="./">
+                <TwitterWrapper />
+              </IconLink>
+            </LiSocial>
+
+            <LiSocial>
+              <IconLink href="./">
+                <InstaWrapper />
+              </IconLink>
+            </LiSocial>
+
+            <LiSocial>
+              <IconLink href="./">
+                <BehanceWrapper />
+              </IconLink>
+            </LiSocial>
+            
+            <LiSocial>
+              <IconLink href="./">
+                <DribbbleWrapper />
+              </IconLink>
+            </LiSocial>
+
+          </UlSocial>
+
+        </Navigation>
+
+      </ContainerMenu>
 
     </SideMenu>
 
-  </Gerald>
+  </MenuSection>
 )
 
 export default Menu;

@@ -1,12 +1,12 @@
 import React from "react";
-import {ScrollStyled, PositionLine} from './styled';
+import {ScrollStyled, LinkScroll, PositionLine, LineOne, LineTwo} from './styled';
 
 const ScrollBtn = () => (
     <ScrollStyled>
-      <a href="./">Scroll Down</a>
+      <LinkScroll href="./">Scroll Down</LinkScroll>
       <PositionLine>
-        <div className="line1"></div>
-        <div className="line2"></div>
+        <LineOne className="line1"></LineOne>
+        <LineTwo className="line2"></LineTwo>
       </PositionLine>
     </ScrollStyled>
 

@@ -1,8 +1,8 @@
-import { Facebook } from '@styled-icons/boxicons-logos/Facebook'
-import { Twitter } from '@styled-icons/boxicons-logos/Twitter'
-import { Instagram } from '@styled-icons/fa-brands/Instagram'
-import { Behance } from '@styled-icons/boxicons-logos/Behance'
-import { Dribbble } from '@styled-icons/boxicons-logos/Dribbble'
+import { Facebook } from '@styled-icons/boxicons-logos/Facebook';
+import { Twitter } from '@styled-icons/boxicons-logos/Twitter';
+import { Instagram } from '@styled-icons/fa-brands/Instagram';
+import { Behance } from '@styled-icons/boxicons-logos/Behance';
+import { Dribbble } from '@styled-icons/boxicons-logos/Dribbble';
 
 const Icons = {
     Facebook,
@@ -12,4 +12,4 @@ const Icons = {
     Dribbble
 }
 
-export default Icons
+export default Icons;
