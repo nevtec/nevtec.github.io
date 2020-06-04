@@ -4,24 +4,24 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import Logo from '../Logo/';
 import Menu from '../Menu/';
 import SocialMedia from '../SocialMedia';
-import ScrollDown from '../ScrollDown/index';
+import ScrollDown from '../ScrollDown/';
+import Title from '../../components/common/Title/';
+import Description from '../../components/common/Description/';
 
-import { SectionHeader, ContainerHeader, PositionLogo, HeaderWrapper, BtnContainer, BtnHeader, ScrollWrapper } from './styled';
-import { Title, Description } from '../../components/common/styled';
+import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, BtnHeader, ScrollWrapper } from './styled';
 
 const Header = () => (
-  <SectionHeader id="Header">
-    
-    <Menu />
-    <SocialMedia />
+  <HeaderWrapper id="Header">
 
     <ContainerHeader>
+      <Menu />
+      <SocialMedia />
 
-      <PositionLogo>
+      <HeaderLogo>
         <Logo />
-      </PositionLogo>
+      </HeaderLogo>
 
-      <HeaderWrapper>
+      <ContentHeader>
         <Title>
           WELCOME TO NEVTEC
         </Title>
@@ -30,15 +30,15 @@ const Header = () => (
           influential brands and digital experiences.
         </Description>
 
-        <BtnContainer>
+        <BtnWrapper>
           <BtnHeader onClick={() => scrollTo('#Header')}>
             start a project
           </BtnHeader>
           <BtnHeader onClick={() => scrollTo('#About')}>
             more about us
           </BtnHeader>
-        </BtnContainer>
-      </HeaderWrapper>
+        </BtnWrapper>
+      </ContentHeader>
 
     </ContainerHeader>
     
@@ -46,7 +46,7 @@ const Header = () => (
       <ScrollDown />
     </ScrollWrapper>
 
-  </SectionHeader>
+  </HeaderWrapper>
 )
 
 export default Header;

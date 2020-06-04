@@ -5,6 +5,7 @@ import { MediaWrapper, UlMedia, LiMedia, LinkMedia, FigCapsule, TitleSocial, Fac
 const SocialMedia = () => (
   <MediaWrapper>
     <UlMedia>
+      
       <LiMedia>
         <LinkMedia href="https://www.facebook.com/" value="media">
           <FigCapsule>

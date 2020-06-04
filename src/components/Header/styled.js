@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import img from '../../images/back.jpg';
 
-export const SectionHeader = styled.header `
+export const HeaderWrapper = styled.header`
     width: 100%;
     background-image: url(${img});
     background-repeat: no-repeat;
@@ -14,35 +14,35 @@ export const SectionHeader = styled.header `
     padding-bottom: 138px;
 `
 
-export const ContainerHeader = styled.div `
+export const ContainerHeader = styled.div`
     ${ ({ theme }) => theme.setContainer()};
 `
 
-export const PositionLogo = styled.div `
-    max-width: 10%;
+export const HeaderLogo = styled.div`
+    max-width: 100%;
     margin-right: auto;
     padding: 38px 0;
 `
 
-export const HeaderWrapper = styled.div `
+export const ContentHeader = styled.div`
     width: 100%;
     max-width: 1000px;
     padding-top: 114px;
 
-    ${({ theme }) => theme.media.smallPhone`
+    ${({ theme }) => theme.media.phone`
         text-align: center;
         text-align: -webkit-center;
         padding-top: 30px;
     `}
 `
 
-export const BtnContainer = styled.div `
+export const BtnWrapper = styled.div`
     max-width: 450px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
 
-    ${({ theme }) => theme.media.smallPhone`
+    ${({ theme }) => theme.media.phone`
         flex-direction: column;
         padding-top: 10px;
     `} 
@@ -62,7 +62,7 @@ export const BtnHeader = styled.button`
         color: ${({ theme }) => theme.colors.writeHove};
     }
 
-    ${({ theme }) => theme.media.smallPhone`
+    ${({ theme }) => theme.media.phone`
         margin-bottom: 14px;
     `} 
 `

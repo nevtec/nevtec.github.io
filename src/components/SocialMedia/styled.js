@@ -9,7 +9,7 @@ export const MediaWrapper = styled.nav`
   top: 330px;
   width: 100px;
 
-  ${({ theme }) => theme.media.smallPhone`
+  ${({ theme }) => theme.media.phone`
     display: none;
   `}
 `
@@ -66,7 +66,7 @@ const iconsocial = `
   position: absolute; 
   top: -14px; 
   left: 70px;
-  transition: opacity 0.6s linear;
+  transition: all 0.6s;
 `
 
 export const FaceWrapper = styled(Icons.Facebook)`

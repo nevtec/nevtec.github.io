@@ -2,9 +2,9 @@ const RELATIVE_UNIT_BASE = 16;
 const MAX_WIDTH = '1255px';
 
 const breakpoints = {
-  tablet: 960,
-  phone: 768,
-  smallPhone: 540,
+  desktop: 960,
+  tablet: 768,
+  phone: 540,
 };
 
 const generateBreakpoint = (width, cssMarkup) => `
@@ -59,4 +59,4 @@ const theme = {
 
 }
 
-export default theme
+export default theme;

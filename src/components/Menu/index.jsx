@@ -1,22 +1,21 @@
 import React from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import { MenuSection, BtnMenu, MenuName, SideMenu, ContainerMenu, BoxText, TextDescription, Contrast, UlSocial, LiSocial, IconLink, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
-import { Navigation, UnList, List, Link } from '../../components/common/styled';
+import { MenuWrapper, BtnContent, MenuName, SideMenu, ContainerMenu, NavWrapper, UnList, List, Link, BoxText, TextDescription, Contrast, UlSocial, LiSocial, IconLink, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
 
 const Menu = () => (
-  <MenuSection>
+  <MenuWrapper>
 
-    <BtnMenu for="bt_menu">
+    <BtnContent for="bt_menu">
         <MenuName>Menu</MenuName>
         &#9776;
-    </BtnMenu>
+    </BtnContent>
     
     <input type="checkbox" id="bt_menu" />
 
-    <SideMenu className="menu">
+    <SideMenu>
       <ContainerMenu>
-        <Navigation>
+        <NavWrapper>
             <UnList>
               <List>
                 <Link onClick={() => scrollTo('#Header')}>Home</Link>
@@ -37,7 +36,7 @@ const Menu = () => (
                 <Link onClick={() => scrollTo('#Contact')}>Contact</Link>
               </List>
             </UnList>
-        </Navigation>
+        </NavWrapper>
 
         <BoxText>
           <TextDescription>
@@ -47,7 +46,7 @@ const Menu = () => (
           </TextDescription>
         </BoxText>
 
-        <Navigation>
+        <NavWrapper>
 
           <UlSocial>
 
@@ -83,13 +82,13 @@ const Menu = () => (
 
           </UlSocial>
 
-        </Navigation>
+        </NavWrapper>
 
       </ContainerMenu>
 
     </SideMenu>
 
-  </MenuSection>
+  </MenuWrapper>
 )
 
 export default Menu;

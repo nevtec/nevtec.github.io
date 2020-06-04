@@ -1,10 +1,10 @@
 import React from "react";
 
-import { LogoWrapper } from './styled';
+import { LogoWrapper, Highlight } from './styled';
 
 const Logo = () => (
   <LogoWrapper>
-      NevTec.
+      Nev<Highlight>Tec</Highlight>.
   </LogoWrapper>
 )
 

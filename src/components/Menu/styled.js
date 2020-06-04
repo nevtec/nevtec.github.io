@@ -2,22 +2,13 @@ import styled from "styled-components";
 
 import Icons from '../Icons';
 
-export const MenuSection = styled.div `
+export const MenuWrapper = styled.div `
     input{
         display: none;
     }
-
-    .menu {
-    margin-right: -100%;
-    transition: all .6s;
-    }
-
-    #bt_menu:checked ~ .menu{
-        margin-right: 0;
-    }
 `
 
-export const BtnMenu = styled.label `
+export const BtnContent = styled.label `
     height: 40px;
     background-color: ${({ theme }) => theme.colors.bgBtnMenu};
     position: fixed;
@@ -45,7 +36,7 @@ export const MenuName = styled.span`
     }
 `
 
-export const SideMenu = styled.div `
+export const SideMenu = styled.div`
     font-family: ${({ theme }) => theme.fonts.montRegular};
     color: ${({ theme }) => theme.colors.whiteDefault};
     background-color: ${({ theme }) => theme.colors.bgMenu};
@@ -55,30 +46,56 @@ export const SideMenu = styled.div `
     right: 0;
     z-index: 98;
     position: fixed;
+    margin-right: -100%;
+    transition: all .6s;
+    
+    #bt_menu:checked ~ &{
+        margin-right: 0;
+    }
 `
 
-export const ContainerMenu = styled.div `
+export const ContainerMenu = styled.div`
     padding-left: 40px;
     padding-top: 64px;
 `
 
-export const BoxText = styled.div `
+export const NavWrapper = styled.nav`
+  cursor: pointer;
+`
+
+export const UnList = styled.ul`
+    padding: 0;
+`
+
+export const List = styled.li`
+  list-style-type: none;
+  line-height: 50px;
+`
+
+export const Link = styled.a`
+  &:hover{
+      transition: all 0.6s;
+      color: ${({ theme }) => theme.colors.blueDefault};
+  }
+`
+
+export const BoxText = styled.div`
     font-family: ${({ theme }) => theme.fonts.montLight};
     width: 198px;
     margin-top: 26px;
 `
 
-export const TextDescription = styled.p `
+export const TextDescription = styled.p`
     color: ${({ theme }) => theme.colors.grayText};
     line-height: 23px;
     font-size: 13px;
 `
 
-export const Contrast = styled.span `
+export const Contrast = styled.span`
     color: ${({ theme }) => theme.colors.blueDefault};
 `
 
-export const UlSocial = styled.ul `
+export const UlSocial = styled.ul`
     list-style-type: none;
     display: flex;
     padding: 0;
@@ -102,7 +119,7 @@ const iconsocial = `
     transition: all 0.6s;
 `
 
-export const FaceWrapper = styled(Icons.Facebook) `
+export const FaceWrapper = styled(Icons.Facebook)`
     ${iconsocial};
 
     &:hover{
@@ -111,7 +128,7 @@ export const FaceWrapper = styled(Icons.Facebook) `
     }
 `
 
-export const TwitterWrapper = styled(Icons.Twitter) `
+export const TwitterWrapper = styled(Icons.Twitter)`
     ${iconsocial};
 
     &:hover{
@@ -120,7 +137,7 @@ export const TwitterWrapper = styled(Icons.Twitter) `
     }
 `
 
-export const InstaWrapper = styled(Icons.Instagram) `
+export const InstaWrapper = styled(Icons.Instagram)`
     ${iconsocial};
 
     &:hover{
@@ -129,7 +146,7 @@ export const InstaWrapper = styled(Icons.Instagram) `
     }
 `
 
-export const BehanceWrapper = styled(Icons.Behance) `
+export const BehanceWrapper = styled(Icons.Behance)`
     ${iconsocial};
 
     &:hover{
@@ -138,7 +155,7 @@ export const BehanceWrapper = styled(Icons.Behance) `
     }
 `
 
-export const DribbbleWrapper = styled(Icons.Dribbble) `
+export const DribbbleWrapper = styled(Icons.Dribbble)`
     ${iconsocial};
 
     &:hover{
