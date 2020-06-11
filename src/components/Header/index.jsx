@@ -5,10 +5,14 @@ import Logo from '../Logo/';
 import Menu from '../Menu/';
 import SocialMedia from '../SocialMedia';
 import ScrollDown from '../ScrollDown/';
-import Title from '../../components/common/Title/';
-import Description from '../../components/common/Description/';
+import Description from '../common/Description';
+import Title from '../common/Title';
 
 import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, BtnHeader, ScrollWrapper } from './styled';
+
+const scrollToHeader = (Header) => () => scrollTo(Header)
+
+const scrollToAbout = (About) => () => scrollTo(About)
 
 const Header = () => (
   <HeaderWrapper id="Header">
@@ -22,19 +26,20 @@ const Header = () => (
       </HeaderLogo>
 
       <ContentHeader>
-        <Title>
-          WELCOME TO NEVTEC
-        </Title>
         <Description>
+          WELCOME TO NEVTEC
+        </Description>
+        <Title>
           We are a creative group of nevinhosos who design 
           influential brands and digital experiences.
-        </Description>
+        </Title>
 
         <BtnWrapper>
-          <BtnHeader onClick={() => scrollTo('#Header')}>
+          <BtnHeader onClick={scrollToHeader('#Header')}>
             start a project
           </BtnHeader>
-          <BtnHeader onClick={() => scrollTo('#About')}>
+
+          <BtnHeader onClick={scrollToAbout('#About')}>
             more about us
           </BtnHeader>
         </BtnWrapper>

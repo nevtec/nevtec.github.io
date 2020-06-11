@@ -1,4 +1,3 @@
-const RELATIVE_UNIT_BASE = 16;
 const MAX_WIDTH = '1255px';
 
 const breakpoints = {
@@ -8,7 +7,7 @@ const breakpoints = {
 };
 
 const generateBreakpoint = (width, cssMarkup) => `
-  @media (max-width: ${width / RELATIVE_UNIT_BASE}em) {
+  @media (max-width: ${width}px) {
     ${cssMarkup};
   }
 `;

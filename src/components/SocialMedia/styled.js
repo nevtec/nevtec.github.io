@@ -14,10 +14,6 @@ export const MediaWrapper = styled.nav`
   `}
 `
 
-export const UlMedia = styled.ul`
-
-`
-
 export const LiMedia = styled.li`
   list-style-type: none;
   cursor: pointer;
@@ -39,10 +35,6 @@ export const LinkMedia = styled.a`
       left: 0px;
     }
   }
-`
-
-export const FigCapsule = styled.figure`
-
 `
 
 export const TitleSocial = styled.span`

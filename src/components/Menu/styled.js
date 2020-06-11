@@ -46,11 +46,11 @@ export const SideMenu = styled.div`
     right: 0;
     z-index: 98;
     position: fixed;
-    margin-right: -100%;
+    transform: translateX(280px);
     transition: all .6s;
     
     #bt_menu:checked ~ &{
-        margin-right: 0;
+        transform: translateX(0);
     }
 `
 

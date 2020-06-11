@@ -3,6 +3,18 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import { MenuWrapper, BtnContent, MenuName, SideMenu, ContainerMenu, NavWrapper, UnList, List, Link, BoxText, TextDescription, Contrast, UlSocial, LiSocial, IconLink, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
 
+const scrollToHeader = (Header) => () => scrollTo(Header)
+
+const scrollToAbout = (About) => () => scrollTo(About)
+
+const scrollToServices = (Services) => () => scrollTo(Services)
+
+const scrollToWorks = (Works) => () => scrollTo(Works)
+
+const scrollToClients = (Clients) => () => scrollTo(Clients)
+
+const scrollToContact = (Contact) => () => scrollTo(Contact)
+
 const Menu = () => (
   <MenuWrapper>
 
@@ -18,22 +30,22 @@ const Menu = () => (
         <NavWrapper>
             <UnList>
               <List>
-                <Link onClick={() => scrollTo('#Header')}>Home</Link>
+                <Link onClick={scrollToHeader('#Header')}>Home</Link>
               </List>
               <List>
-                <Link onClick={() => scrollTo('#About')}>About</Link>
+                <Link onClick={scrollToAbout('#About')}>About</Link>
               </List>
               <List>
-                <Link onClick={() => scrollTo('#Services')}>Services</Link>
+                <Link onClick={scrollToServices('#Services')}>Services</Link>
               </List>
               <List>
-                <Link onClick={() => scrollTo('#Works')}>Works</Link>
+                <Link onClick={scrollToWorks('#Works')}>Works</Link>
               </List>
               <List>
-                <Link onClick={() => scrollTo('#Clients')}>Clients</Link>
+                <Link onClick={scrollToClients('#Clients')}>Clients</Link>
               </List>
               <List>
-                <Link onClick={() => scrollTo('#Contact')}>Contact</Link>
+                <Link onClick={scrollToContact('#Contact')}>Contact</Link>
               </List>
             </UnList>
         </NavWrapper>
