@@ -10,9 +10,9 @@ export const MenuWrapper = styled.div `
 
 export const BtnContent = styled.label `
     height: 40px;
-    background-color: ${({ theme }) => theme.colors.bgBtnMenu};
+    /* background-color: ${({ theme }) => theme.colors.bgBtnMenu}; */
     position: fixed;
-    right: 4px;
+    right: -8px;
     top: -8px;
     margin: 38px;
     color: ${({ theme }) => theme.colors.whiteDefault};
@@ -23,7 +23,9 @@ export const BtnContent = styled.label `
 
 export const MenuName = styled.span`
     font-family: ${({ theme }) => theme.fonts.montRegular};
-    font-size: 16px;
+    font-size: 12px;
+    letter-spacing: 2.6px;
+    font-weight: bold;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.blueDefault};
     position: relative;
