@@ -5,14 +5,15 @@ import Logo from '../Logo/';
 import Menu from '../Menu/';
 import SocialMedia from '../SocialMedia';
 import ScrollDown from '../ScrollDown/';
-import Description from '../common/Description';
 import Title from '../common/Title';
+import Description from '../common/Description';
+import BtnStyled from '../common/BtnStyles';
 
-import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, BtnHeader, ScrollWrapper } from './styled';
+import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, ScrollWrapper } from './styled';
 
-const scrollToHeader = (Header) => () => scrollTo(Header)
+const scrollToIndex = (Header) => () => scrollTo(Header);
 
-const scrollToAbout = (About) => () => scrollTo(About)
+const scrollToAbout = (About) => () => scrollTo(About);
 
 const Header = () => (
   <HeaderWrapper id="Header">
@@ -30,18 +31,18 @@ const Header = () => (
           WELCOME TO NEVTEC
         </Description>
         <Title>
-          We are a creative group of nevinhosos who design 
+          We are a creative group of nevinhosos who design
           influential brands and digital experiences.
         </Title>
 
         <BtnWrapper>
-          <BtnHeader onClick={scrollToHeader('#Header')}>
+          <BtnStyled onClick={scrollToIndex('#Header')}>
             start a project
-          </BtnHeader>
+          </BtnStyled>
 
-          <BtnHeader onClick={scrollToAbout('#About')}>
+          <BtnStyled onClick={scrollToAbout('#About')}>
             more about us
-          </BtnHeader>
+          </BtnStyled>
         </BtnWrapper>
       </ContentHeader>
 
@@ -52,6 +53,6 @@ const Header = () => (
     </ScrollWrapper>
 
   </HeaderWrapper>
-)
+);
 
 export default Header;

@@ -53,6 +53,6 @@ const SocialMedia = () => (
 
     </ul>
   </MediaWrapper>
-)
+);
 
 export default SocialMedia;
