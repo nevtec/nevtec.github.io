@@ -23,20 +23,16 @@ export const LinkScroll = styled.a`
 export const PositionLine = styled.div`
   position: absolute;
   right: -14px;
-  bottom: -146px; 
-`
-
-const LineDimension = `
+  bottom: -146px;
   width: 2px;
-  height: 80px;
-`
-
-export const LineOne = styled.div`
-  ${LineDimension}
-  background-color: ${({ theme }) => theme.colors.blueDefault};
-`
-
-export const LineTwo = styled.div`
-  ${LineDimension}
+  height: 160px;
   background-color: ${({ theme }) => theme.colors.whiteDefault};
+
+  &::after{
+    width: 2px;
+    height: 80px;
+    display: block;
+    content: '';
+    background-color: ${({ theme }) => theme.colors.blueDefault};
+  } 
 `
