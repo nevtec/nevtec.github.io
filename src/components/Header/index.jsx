@@ -1,13 +1,13 @@
 import React from "react";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import Logo from '../Logo/';
-import Menu from '../Menu/';
-import SocialMedia from '../SocialMedia';
-import ScrollDown from '../ScrollDown/';
-import Title from '../common/Title';
-import Description from '../common/Description';
-import BtnStyled from '../common/BtnStyles';
+import Logo from '@components/Logo/';
+import Menu from '@components/Menu/';
+import SocialMedia from '@components/SocialMedia';
+import ScrollDown from '@components/ScrollDown/';
+import Title from '@components/common/Title';
+import Description from '@components/common/Description';
+import BtnStyled from '@components/common/BtnStyles';
 
 import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, ScrollWrapper } from './styled';
 

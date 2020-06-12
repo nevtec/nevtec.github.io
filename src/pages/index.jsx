@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import theme from '../utils/theme/theme.js';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
+import Layout from '@components/Layout';
+import Header from '@components/Header';
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -12,4 +12,4 @@ const IndexPage = () => (
   </ThemeProvider>
 )
 
-export default IndexPage
+export default IndexPage;
