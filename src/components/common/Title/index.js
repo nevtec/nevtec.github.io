@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
+const dynanmicVariants = ({ variant, theme }) =>
+({
+  primary: `
+    color: ${theme.colors.whiteDefault};
+    width: 76%;
+  `,
+}[variant]);
+
 const Title = styled.h2`
+  ${dynanmicVariants};
   font-family: ${({ theme }) => theme.fonts.montRegular};
-  color: ${({ theme }) => theme.colors.whiteDefault};
   font-size: 58px;
-  width: 76%;
   margin-top: 0;
   line-height: 76px;
 

@@ -15,7 +15,9 @@ module.exports ={
       options: {
         alias: {
           "@components": path.resolve(__dirname, 'src/components'),
-          
+          "@utils": path.resolve(__dirname, 'src/utils'),
+          "@images": path.resolve(__dirname, 'public/images'),
+          "@fonts": path.resolve(__dirname, 'public/fonts'),
         },
         extensions: []
       }

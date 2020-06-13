@@ -3,10 +3,7 @@ import styled from "styled-components";
 const dynanmicVariants = ({ variant, theme }) =>
 ({
   primary: `
-    color: ${theme.colors.whiteDefault};
-  `,
-
-  secondary: `
+    color: ${theme.colors.grayTittle};
   `,
 }[variant]);
 

@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
-import montserratBold from '../../fonts/montserrat/montserrat-bold-webfont.woff2';
-import montserratLight from '../../fonts/montserrat/montserrat-light-webfont.woff2';
-import montserratMedium from '../../fonts/montserrat/montserrat-medium-webfont.woff2';
-import montserratRegular from '../../fonts/montserrat/montserrat-regular-webfont.woff2';
-import montserratSemibold from '../../fonts/montserrat/montserrat-semibold-webfont.woff2';
+import montserratBold from '@fonts/montserrat/montserrat-bold-webfont.woff2';
+import montserratLight from '@fonts/montserrat/montserrat-light-webfont.woff2';
+import montserratMedium from '@fonts/montserrat/montserrat-medium-webfont.woff2';
+import montserratRegular from '@fonts/montserrat/montserrat-regular-webfont.woff2';
+import montserratSemibold from '@fonts/montserrat/montserrat-semibold-webfont.woff2';
 
 const GlobalStyle = createGlobalStyle`
 

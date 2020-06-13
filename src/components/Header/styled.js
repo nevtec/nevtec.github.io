@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import img from '../../images/back.jpg';
+import img from '@images/back.jpg';
 
 export const HeaderWrapper = styled.header`
     width: 100%;

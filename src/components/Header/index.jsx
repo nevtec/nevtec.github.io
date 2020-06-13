@@ -30,17 +30,17 @@ const Header = () => (
         <Description variant="primary">
           WELCOME TO NEVTEC
         </Description>
-        <Title>
+        <Title variant="primary">
           We are a creative group of nevinhosos who design
           influential brands and digital experiences.
         </Title>
 
         <BtnWrapper>
-          <BtnStyled onClick={scrollToIndex('#Header')}>
+          <BtnStyled variant="primary" onClick={scrollToIndex('#Header')}>
             start a project
           </BtnStyled>
 
-          <BtnStyled onClick={scrollToAbout('#About')}>
+          <BtnStyled variant="primary" onClick={scrollToAbout('#About')}>
             more about us
           </BtnStyled>
         </BtnWrapper>

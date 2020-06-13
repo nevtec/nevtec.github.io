@@ -4,7 +4,7 @@ import { LogoWrapper, Highlight } from './styled';
 
 const Logo = () => (
   <LogoWrapper>
-      Nev<Highlight>Tec</Highlight>.
+    Nev<Highlight>Tec</Highlight>.
   </LogoWrapper>
 )
 
