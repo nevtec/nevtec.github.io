@@ -27,7 +27,7 @@ const Header = () => (
       </HeaderLogo>
 
       <ContentHeader>
-        <Description>
+        <Description variant="primary">
           WELCOME TO NEVTEC
         </Description>
         <Title>
