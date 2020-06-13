@@ -33,6 +33,7 @@ const theme = {
     writeHove: "#000",
     bgMenu: "#000",
     bgBtnMenu: "#000000ad",
+    lineColor: "#ffffff6e",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
