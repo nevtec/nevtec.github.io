@@ -38,35 +38,73 @@ export const ContentText = styled.div`
 `
 
 export const ParagraphAbout = styled.p`
-  font-size: 22px;
+  font-size: 28px;
   line-height: 40px;
+  font-family: "lora-regular, serif";
 
   ${({ theme }) => theme.media.phone`
-    font-size: 18px;
+    font-size: 22px;
     line-height: 30px;
   `}
 `
 
 export const ContentNumber = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   font-family: ${({ theme }) => theme.fonts.montBold};
   text-align: center;
   margin-top: 46px;
+  place-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  ${({ theme }) => theme.media.desktop`
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+  `}
+
+  ${({ theme }) => theme.media.phone`
+    grid-template-columns: 1fr;
+    justify-items: center;
+  `}
 `
 
 export const ScoreContent = styled.div`
-  margin: auto;
-  padding: 0px 38px;
+  padding: 0px 4px;
   border-right: 1px solid;
   border-color: ${({ theme }) => theme.colors.lineColor};
+
+  &:nth-child(4n){
+      border-style: none;
+    }
+
+  ${({ theme }) => theme.media.desktop`
+    &:nth-child(2n){
+      border-style: none;
+    }
+  `}
+
+  ${({ theme }) => theme.media.phone`
+    font-size: 34px;
+    width: 50%;
+    border-style: none;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #ffffff6e; //TODO
+
+    &:nth-child(even){
+      border-bottom: 1px solid #ffffff6e; //TODO
+    }
+  `}
 `
 
 export const ScoreNumber = styled.div`
   color: ${({ theme }) => theme.colors.whiteDefault};
-  font-size: 90px;
+  font-size: 80px;
+
+  ${({ theme }) => theme.media.phone`
+    font-size: 60px;
+  `}
 `
 
 export const ScoreName = styled.h3 `
-  font-size: 16px;
+  font-size: 18px;
 `
