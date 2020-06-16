@@ -12,7 +12,7 @@ const About = () => (
 
       <ContentHeader>
         <Description variant="secondary">HELLO THERE</Description>
-        <Title variant="primary">We Are Glint</Title>
+        <Title variant="secondary">We Are Glint</Title>
       </ContentHeader>
 
       <ContentText>
@@ -26,25 +26,27 @@ const About = () => (
       </ContentText>
 
       <ContentNumber>
-        <ScoreContent>
-          <ScoreNumber>127</ScoreNumber>
-          <ScoreName>Awards Received</ScoreName>
-        </ScoreContent>
+       
+          <ScoreContent>
+            <ScoreNumber>0001</ScoreNumber>
+            <ScoreName>Awards Received</ScoreName>
+          </ScoreContent>
 
-        <ScoreContent>
-          <ScoreNumber>1505</ScoreNumber>
-          <ScoreName>Cups of Coffee</ScoreName>
-        </ScoreContent>
+          <ScoreContent>
+            <ScoreNumber>0002</ScoreNumber>
+            <ScoreName>Cups of Coffee</ScoreName>
+          </ScoreContent>
+       
+          <ScoreContent>
+            <ScoreNumber>0003</ScoreNumber>
+            <ScoreName>Projects Completed</ScoreName>
+          </ScoreContent>
 
-        <ScoreContent>
-          <ScoreNumber>109</ScoreNumber>
-          <ScoreName>Projects Completed</ScoreName>
-        </ScoreContent>
-
-        <ScoreContent>
-          <ScoreNumber>102</ScoreNumber>
-          <ScoreName>Happy Clients</ScoreName>
-        </ScoreContent>
+          <ScoreContent>
+            <ScoreNumber>0004</ScoreNumber>
+            <ScoreName>Happy Clients</ScoreName>
+          </ScoreContent>
+      
       </ContentNumber>
       
     </ContainerAbout>
