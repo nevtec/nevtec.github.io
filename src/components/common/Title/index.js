@@ -14,6 +14,12 @@ const dynanmicVariants = ({ variant, theme }) =>
     font-size: 70px;
     letter-spacing: 2px;
   `,
+
+  light: `
+    color: ${theme.colors.bgMenu};
+    width: 80%;
+    font-size: 52px;
+  `,
 }[variant]);
 
 const Title = styled.h2`

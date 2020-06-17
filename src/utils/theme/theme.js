@@ -34,6 +34,7 @@ const theme = {
     bgMenu: "#000",
     bgBtnMenu: "#000000ad",
     lineColor: "#ffffff6e",
+    linelight: "#e0d9d9",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
