@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 
 import Title from '@components/common/Title';
 import Description from '@components/common/Description';
 
 import { AboutWrapper, ContainerAbout, ContentHeader, ContentText, ParagraphAbout, ContentNumber, ScoreContent, ScoreNumber, ScoreName } from './styled';
 
-const About = () => (
-  <AboutWrapper id="About">
+const About = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000, offset : 210 , });
+  }, []);
+
+  return (
+    <AboutWrapper>
 
     <ContainerAbout>
 
-      <ContentHeader>
+      <ContentHeader data-aos="fade-up">
         <Description variant="secondary">HELLO THERE</Description>
         <Title variant="secondary">We Are Glint</Title>
       </ContentHeader>
 
-      <ContentText>
+      <ContentText data-aos="fade-up">
         <ParagraphAbout>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -25,7 +32,7 @@ const About = () => (
         </ParagraphAbout>
       </ContentText>
 
-      <ContentNumber>
+      <ContentNumber data-aos="fade-up">
        
           <ScoreContent>
             <ScoreNumber>0001</ScoreNumber>
@@ -52,6 +59,8 @@ const About = () => (
     </ContainerAbout>
 
   </AboutWrapper>
-)
+  )
+  
+}
 
 export default About;
