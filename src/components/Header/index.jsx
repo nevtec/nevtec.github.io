@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Logo from '@components/Logo/';
@@ -15,44 +16,51 @@ const scrollToIndex = (Header) => () => scrollTo(Header);
 
 const scrollToAbout = (About) => () => scrollTo(About);
 
-const Header = () => (
-  <HeaderWrapper id="Header">
+const Header = () => {
 
-    <ContainerHeader>
-      <Menu />
-      <SocialMedia />
+  useEffect(() => {
+    Aos.init({ duration: 2000, offset : 210 , });
+  }, []);
 
-      <HeaderLogo>
-        <Logo />
-      </HeaderLogo>
+  return (
+    <HeaderWrapper id="Header">
 
-      <ContentHeader>
-        <Description variant="primary">
-          WELCOME TO NEVTEC
-        </Description>
-        <Title variant="primary">
-          We are a creative group of nevinhosos who design
-          influential brands and digital experiences.
-        </Title>
+      <ContainerHeader>
+        <Menu />
+        <SocialMedia />
 
-        <BtnWrapper>
-          <BtnStyled variant="primary" onClick={scrollToIndex('#Header')}>
-            start a project
-          </BtnStyled>
+        <HeaderLogo>
+          <Logo />
+        </HeaderLogo>
 
-          <BtnStyled variant="primary" onClick={scrollToAbout('#About')}>
-            more about us
-          </BtnStyled>
-        </BtnWrapper>
-      </ContentHeader>
+        <ContentHeader data-aos="fade-up">
+          <Description variant="primary">
+            WELCOME TO NEVTEC
+          </Description>
+          <Title variant="primary">
+            We are a creative group of nevinhosos who design
+            influential brands and digital experiences.
+          </Title>
 
-    </ContainerHeader>
-    
-    <ScrollWrapper>
-      <ScrollDown />
-    </ScrollWrapper>
+          <BtnWrapper>
+            <BtnStyled variant="primary" onClick={scrollToIndex('#Header')}>
+              start a project
+            </BtnStyled>
 
-  </HeaderWrapper>
-);
+            <BtnStyled variant="primary" onClick={scrollToAbout('#About')}>
+              more about us
+            </BtnStyled>
+          </BtnWrapper>
+        </ContentHeader>
+
+      </ContainerHeader>
+      
+      <ScrollWrapper>
+        <ScrollDown />
+      </ScrollWrapper>
+
+    </HeaderWrapper>
+  )
+};
 
 export default Header;
