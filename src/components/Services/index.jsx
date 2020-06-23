@@ -4,7 +4,7 @@ import Aos from "aos";
 import Title from '@components/common/Title';
 import Description from '@components/common/Description';
 
-import { ServicesWrapper, ContainerServices, ContentHeader, ContentService, TypeService, FigCapsule, WorldWrapper, TextBox, Title, ParagraphServices, } from './styled';
+import { ServicesWrapper, ContainerServices, ContentHeader, ContentService, TypeService, FigCapsule, WorldWrapper, TextBox, TitleBox, ParagraphServices, } from './styled';
 
 const Services = () => {
 
@@ -29,7 +29,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
@@ -41,7 +41,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
@@ -53,7 +53,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
@@ -65,7 +65,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
@@ -77,7 +77,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
@@ -89,7 +89,7 @@ const Services = () => {
                 <WorldWrapper />
               </FigCapsule>
               <TextBox>
-                <Title>Brand Identity</Title>
+                <TitleBox>Brand Identity</TitleBox>
                 <ParagraphServices>
                   Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                 </ParagraphServices>
