@@ -83,17 +83,19 @@ export const ScoreContent = styled.div`
     }
   `}
 
-  ${({ theme }) => theme.media.phone`
+  ${({ theme }) =>
+    theme.generateBreakpoint(540,
+    `
     font-size: 34px;
     width: 50%;
     border-style: none;
     grid-template-columns: 1fr;
-    border-bottom: 1px solid #ffffff6e; //TODO
+    border-bottom: 1px solid ${theme.colors.lineColor}; //TODO
 
     &:nth-child(even){
-      border-bottom: 1px solid #ffffff6e; //TODO
-    }
-  `}
+      border-bottom: 1px solid ${theme.colors.lineColor}; //TODO
+    `
+  )}
 `
 
 export const ScoreNumber = styled.div`
