@@ -78,7 +78,7 @@ export const TextBox = styled.div`
   `}
 `
 
-export const H3Title = styled.h3`
+export const Title = styled.h3`
   font-family: ${({ theme }) => theme.fonts.montBold};
   font-size: 30px;
 `
