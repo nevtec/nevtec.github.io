@@ -20,6 +20,12 @@ const dynanmicVariants = ({ variant, theme }) =>
     width: 80%;
     font-size: 52px;
   `,
+
+  black: `
+    color: ${theme.colors.whiteDefault};
+    width: 76%;
+    font-size: 52px;
+  `
 }[variant]);
 
 const Title = styled.h2`
