@@ -5,6 +5,11 @@ import { Behance } from '@styled-icons/boxicons-logos/Behance';
 import { Dribbble } from '@styled-icons/boxicons-logos/Dribbble';
 import { World } from '@styled-icons/boxicons-regular/World';
 import { Link } from '@styled-icons/boxicons-regular/Link';
+import { Apple } from '@styled-icons/boxicons-logos/Apple';
+import { ReactLogo } from '@styled-icons/boxicons-logos/ReactLogo';
+import { Dropbox } from '@styled-icons/boxicons-logos/Dropbox';
+import { Chrome } from '@styled-icons/fa-brands/Chrome';
+import { Firefox } from '@styled-icons/boxicons-logos/Firefox';
 
 const Icons = {
     Facebook,
@@ -13,7 +18,12 @@ const Icons = {
     Behance,
     Dribbble,
     World,
-    Link
+    Link,
+    Apple,
+    ReactLogo,
+    Dropbox,
+    Chrome,
+    Firefox
 }
 
 export default Icons;

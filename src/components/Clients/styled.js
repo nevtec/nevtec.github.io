@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// import Icons from "../Icons";git 
+import Icons from "../Icons";
 
 export const ClientsWrapper = styled.section`
   width: 100%;
@@ -18,31 +18,60 @@ export const ContentHeader = styled.header`
   text-align: -webkit-center;
   padding-top: 146px;
   width: 100%;
-
-  &::after{
-    content: '';
-    display: block;
-    width: 40%;
-    border-bottom: 1px solid;
-    border-color: ${({ theme }) => theme.colors.linelight};
-    margin-bottom: 16px;
-  }
 `
 
 export const ContentClients = styled.div`
   width: 100%;
   margin-top: 46px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
-  grid-column-gap: 50px;
+  text-align: center;
+  text-align: -webkit-center;
+`
 
-  ${({ theme }) => theme.media.tablet`
-    grid-template-columns: 1fr;
-  `}
+export const BorderClients = styled.div`
+  border-style: none;
 
-  ${({ theme }) => theme.media.phone`
-    grid-template-columns: 1fr;
-    justify-items: center;
-  `}
+  &:focus{
+    outline-style: none;
+  }
+`
+
+const iconsClients = `
+  width: 130px;
+  transition: all 0.6s;
+`
+
+export const AppleWrapper = styled(Icons.Apple)`
+  ${iconsClients}
+  color: ${({ theme }) => theme.colors.linelight};
+
+  &:hover{
+    color: ${({ theme }) => theme.colors.bgMenu};
+  }
+`
+
+export const ReactWrapper = styled(Icons.ReactLogo)`
+  ${iconsClients}
+  color: ${({ theme }) => theme.colors.linelight};
+
+  &:hover{
+    color: ${({ theme }) => theme.colors.bgMenu};
+  }
+`
+
+export const DropboxWrapper = styled(Icons.Dropbox)`
+  ${iconsClients}
+  color: ${({ theme }) => theme.colors.linelight};
+
+  &:hover{
+    color: ${({ theme }) => theme.colors.bgMenu};
+  }
+`
+
+export const FirefoxWrapper = styled(Icons.Firefox)`
+  ${iconsClients}
+  color: ${({ theme }) => theme.colors.linelight};
+
+  &:hover{
+    color: ${({ theme }) => theme.colors.bgMenu};
+  }
 `

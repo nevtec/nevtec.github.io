@@ -10,6 +10,8 @@ import Clients from '@components/Clients';
 
 import { ThemeProvider } from "styled-components";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
