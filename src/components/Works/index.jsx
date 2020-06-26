@@ -4,7 +4,9 @@ import Aos from "aos";
 import Title from '@components/common/Title';
 import Description from '@components/common/Description';
 
-import { WorksWrapper, BgTitle, BgWorks, ContainerWorks, IntroWrapper, WorksContent, ItemThumb, Figurao, Textao } from './styled';
+import { WorksWrapper, BgTitle, BgWorks, ContainerWorks, IntroWrapper, WorksContent, FigureBox, FigureContent, PhotoEffect, TextBox, PositionText, LinkWrapper, TitleBox, SubBox } from './styled';
+
+import img from '@images/mujer.jpg';
 
 
 const Works = () => {
@@ -27,31 +29,57 @@ const Works = () => {
         <ContainerWorks>
           <WorksContent>
 
-            <ItemThumb>
-              <Figurao></Figurao>
-              <Textao>fsdfsdfsdffd</Textao>
-            </ItemThumb>
+            <FigureBox>
+              <FigureContent>
+                <PhotoEffect src={img} />
+                <TextBox>
+                  <PositionText>
+                    <LinkWrapper />
+                    <TitleBox>SHUTTERBUG</TitleBox>
+                    <SubBox>Paragráfo</SubBox>
+                  </PositionText>
+                </TextBox>
+              </FigureContent>
+            </FigureBox>
 
-            <ItemThumb>
-              <Figurao></Figurao>
-              <Textao>ffsdfsfdfs</Textao>
-            </ItemThumb>
+            <FigureBox>
+              <FigureContent>
+                <PhotoEffect src={img} />
+                <TextBox>
+                <PositionText>
+                    <LinkWrapper />
+                  <TitleBox>SHUTTERBUG</TitleBox>
+                  <SubBox>Paragráfo</SubBox>
+                </PositionText>
+                </TextBox>
+              </FigureContent>
+            </FigureBox>
 
-            <ItemThumb>
-              
-            </ItemThumb>
+            <FigureBox>
+              <FigureContent>
+                <PhotoEffect src={img} />
+                <TextBox>
+                <PositionText>
+                  <LinkWrapper />
+                  <TitleBox>SHUTTERBUG</TitleBox>
+                  <SubBox>Paragráfo</SubBox>
+                </PositionText>
+                </TextBox>
+              </FigureContent>
+            </FigureBox>
 
-            <ItemThumb>
-              
-            </ItemThumb>
-
-            <ItemThumb>
-              
-            </ItemThumb>
-
-            <ItemThumb>
-              
-            </ItemThumb>
+            <FigureBox>
+              <FigureContent>
+                <PhotoEffect src={img} />
+                <TextBox>
+                <PositionText>
+                  <LinkWrapper />
+                  <TitleBox>SHUTTERBUG</TitleBox>
+                  <SubBox>Paragráfo</SubBox>
+                </PositionText>
+                </TextBox>
+              </FigureContent>
+            </FigureBox>
 
           </WorksContent>
         </ContainerWorks>

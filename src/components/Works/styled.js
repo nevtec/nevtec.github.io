@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import mujer from '@images/mujer.jpg';
+import Icons from "../Icons";
 
 export const WorksWrapper = styled.section`
   display: flex;
@@ -46,45 +46,90 @@ export const WorksContent = styled.div`
   margin-top: -170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-`
 
-
-
-
-
-
-export const ItemThumb = styled.div`
-  width: 100%;
   position: relative;
-  overflow: hidden;
+  top: 0;
+  left: -40px;
+
+  ${({ theme }) => theme.media.tablet`
+    grid-template-columns: 1fr;
+  `} 
 `
 
-export const Figurao = styled.figure`
-  margin: 0;
-  padding: 0;
-  background-image: url(${mujer});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-size: cover;
-  height: 580px;
+export const FigureBox = styled.div`
+ width: 100%;
+ height: 26rem;
+ position: relative;
+`
+
+export const FigureContent = styled.figure`
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+`
+
+export const PhotoEffect = styled.img`
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
 
   &:hover{
-    background-size: 190%;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    
+    transform: translateY(-50px);
   }
 `
 
-export const Textao = styled.div`
+export const TextBox = styled.figcaption`
   width: 100%;
   height: 100%;
-  top: 0;
+  position: absolute;
+  top: auto;
+  bottom: -4px;
   left: 0;
-  color: red;
-  background: rgba(0, 0, 0, 0.4);
-  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  opacity: 1;
-  box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  background-color: ${({ theme }) => theme.colors.retina};
+  color: ${({ theme }) => theme.colors.whiteDefault};
+
+  opacity: 0;
+  transform: translateY(0px);
+  transition: transform 0.6s, opacity 0.6s;
+  
+  &:hover{
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+`
+
+export const PositionText = styled.div`
+  text-align: left;
+  padding-top: 304px;
+  padding-left: 16px;
+  line-height: 0.6;
+`
+
+export const LinkWrapper = styled(Icons.Link)`
+  width: 24px;
+  position: relative;
+  top: -288px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 8px;
+
+  &:hover{
+    background-color: ${({ theme }) => theme.colors.whiteDefault};
+    color: ${({ theme }) => theme.colors.bgMenu};
+  }
+`
+
+export const TitleBox = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.montLight};
+  text-transform: uppercase;
+  font-size: 16px;
+`
+
+export const SubBox = styled.p`
+  font-family: ${({ theme }) => theme.fonts.montLight};
+  color: ${({ theme }) => theme.colors.grayText};
+  font-size: 14px;
 `
