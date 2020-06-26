@@ -34,9 +34,10 @@ const theme = {
     bgMenu: "#000",
     bgBtnMenu: "#000000ad",
     lineColor: "#ffffff6e",
-    linelight: "#e0d9d9",
+    linelight: "#7575758c",
     bgWorks: "#111111",
     retina: " #0000009c",
+    clientsBg: "#e6e6e6",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
