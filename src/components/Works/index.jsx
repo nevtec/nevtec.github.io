@@ -16,9 +16,9 @@ const Works = () => {
   }, []);
 
   return (
-    <WorksWrapper>
+    <WorksWrapper id="Works">
       <BgTitle>
-        <ContainerWorks>
+        <ContainerWorks data-aos="fade-up">
           <IntroWrapper>
             <Description variant="light">RECENT WORKS</Description>
             <Title variant="black">We love what we do, check out some of our latest works</Title>
@@ -27,7 +27,7 @@ const Works = () => {
       </BgTitle>
       <BgWorks>
         <ContainerWorks>
-          <WorksContent>
+          <WorksContent data-aos="fade-up">
 
             <FigureBox>
               <FigureContent>
