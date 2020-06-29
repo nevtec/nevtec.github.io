@@ -24,7 +24,7 @@ export const ContentHeader = styled.header`
 `
 
 export const ContentContact = styled.div`
-  width: 94%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   justify-content: center;
@@ -37,12 +37,12 @@ export const ContentContact = styled.div`
 `
 
 export const ContactPrimary = styled.div`
-  background: ${({ theme }) => theme.colors.brForm};
+  background-color: ${({ theme }) => theme.colors.brForm};
   padding: 30px 0;
 `
 
 export const ContactSecondary = styled.div`
-  background: ${({ theme }) => theme.colors.bgMenu};
+  background-color: ${({ theme }) => theme.colors.bgMenu};
   padding: 30px 0;
 `
 
@@ -74,9 +74,9 @@ const formInfo = `
   height: 30px;
   font-size: 14px;
   background: none;
-  border: 0 none;
-  outline: 0;
+  border: none;
   border-bottom: 1px solid;
+  outline: 0;
   padding-bottom: 10px;
   margin-bottom: 24px;
   transition: all 0.8s;
@@ -106,7 +106,7 @@ export const YourMessage = styled.textarea`
 `
 
 export const PositionButton = styled.div`
-  padding: 50px 0 20px 0;
+  padding: 50px 0 20px;
 `
 
 export const Submit = styled.button`

@@ -22,6 +22,7 @@ const Description = styled.h1`
   margin: 0;
   line-height: 46px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 `
 
 export default Description;
