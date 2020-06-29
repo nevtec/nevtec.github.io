@@ -7,6 +7,7 @@ import About from '@components/About';
 import Services from '@components/Services';
 import Works from '@components/Works';
 import Clients from '@components/Clients';
+import Contact from '@components/Contact';
 
 import { ThemeProvider } from "styled-components";
 import "aos/dist/aos.css";
@@ -21,6 +22,7 @@ const IndexPage = () => (
       <Services />
       <Works />
       <Clients />
+      <Contact />
     </Layout>
   </ThemeProvider>
 )

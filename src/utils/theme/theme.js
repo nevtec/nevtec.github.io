@@ -39,6 +39,7 @@ const theme = {
     retina: " #0000009c",
     clientsBg: "#e6e6e6",
     grafit: "#555555",
+    brForm: "#0000008f",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
