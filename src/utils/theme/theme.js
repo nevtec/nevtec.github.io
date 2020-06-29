@@ -31,7 +31,7 @@ const theme = {
     grayText: "#808080",
     grayTittle: "rgba(255,255,255,.5)",
     writeHove: "#000",
-    bgMenu: "#000",
+    bgMenu: "#080808",
     bgBtnMenu: "#000000ad",
     lineColor: "#ffffff6e",
     linelight: "#7575758c",

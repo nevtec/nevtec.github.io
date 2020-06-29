@@ -10,6 +10,7 @@ import { ReactLogo } from '@styled-icons/boxicons-logos/ReactLogo';
 import { Dropbox } from '@styled-icons/boxicons-logos/Dropbox';
 import { Chrome } from '@styled-icons/fa-brands/Chrome';
 import { Firefox } from '@styled-icons/boxicons-logos/Firefox';
+import { Email } from '@styled-icons/material-outlined/Email';
 
 const Icons = {
     Facebook,
@@ -23,7 +24,8 @@ const Icons = {
     ReactLogo,
     Dropbox,
     Chrome,
-    Firefox
+    Firefox,
+    Email
 }
 
 export default Icons;
