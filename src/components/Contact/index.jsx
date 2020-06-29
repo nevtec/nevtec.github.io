@@ -5,7 +5,9 @@ import Title from '@components/common/Title';
 import Description from '@components/common/Description';
 
 
-import { ContactWrapper, ContainerContact, ContentHeader, ContentContact, ContactPrimary, ContactSecondary, TitleOrientation, TitleContact, FormWrapper, FieldOrientation, YourInfo, YourMessage, Submit, ContactInfo, InfoBox, InfoTitle, Information } from './styled';
+import { ContactWrapper, ContainerContact, ContentHeader, ContentContact, ContactPrimary, ContactSecondary, TitleOrientation, TitleContact, FormWrapper, FieldOrientation, YourInfo, YourMessage, PositionButton, Submit, ContactInfo, InfoBox, InfoTitle, Information, PositionSocial } from './styled';
+
+import { NavWrapper, UlSocial, LiSocial, IconLink, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from '@components/Menu/styled';
 
 const Contact = () => {
 
@@ -35,7 +37,9 @@ const Contact = () => {
                 <YourInfo name="contactEmail" type="email" placeholder="Your E-mail" required />
                 <YourInfo name="contactSubject" type="text" placeholder="Subject" required />
                 <YourMessage name="contactMessage" type="text" placeholder="Your Message" row="10" cols="50" required></YourMessage>
-                <Submit>Submit</Submit>
+                <PositionButton>
+                  <Submit>Submit</Submit>
+                </PositionButton>
               </FieldOrientation>
             </FormWrapper>
           </ContactPrimary>
@@ -63,6 +67,44 @@ const Contact = () => {
                 <Information>Phone: (+63) 555 1212</Information>
                 <Information>Phone: (+63) 555 1212</Information>
               </InfoBox>
+
+              <PositionSocial>
+                <NavWrapper>
+                  <UlSocial>
+
+                    <LiSocial>
+                      <IconLink href="./">
+                        <FaceWrapper />
+                      </IconLink>
+                    </LiSocial>
+
+                    <LiSocial>
+                      <IconLink href="./">
+                        <TwitterWrapper />
+                      </IconLink>
+                    </LiSocial>
+
+                    <LiSocial>
+                      <IconLink href="./">
+                        <InstaWrapper />
+                      </IconLink>
+                    </LiSocial>
+
+                    <LiSocial>
+                      <IconLink href="./">
+                        <BehanceWrapper />
+                      </IconLink>
+                    </LiSocial>
+
+                    <LiSocial>
+                      <IconLink href="./">
+                        <DribbbleWrapper />
+                      </IconLink>
+                    </LiSocial>
+
+                  </UlSocial>
+                </NavWrapper>
+              </PositionSocial>
             </ContactInfo>
           </ContactSecondary>
         </ContentContact>

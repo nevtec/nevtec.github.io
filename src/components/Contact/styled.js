@@ -56,6 +56,7 @@ export const TitleContact = styled.h3`
   font-family: ${({ theme }) => theme.fonts.montLight};
   font-size: 14px;
   text-transform: uppercase;
+  padding-bottom: 20px;
 `
 
 export const FormWrapper = styled.form`
@@ -75,33 +76,37 @@ const formInfo = `
   background: none;
   border: 0 none;
   outline: 0;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   padding-bottom: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   transition: all 0.8s;
 `
 
 export const YourInfo = styled.input`
   ${formInfo}
   color: ${({ theme }) => theme.colors.whiteDefault};
-  border-color: ${({ theme }) => theme.colors.bgMenu};
+  border-color: ${({ theme }) => theme.colors.grafit};
   
   &:focus {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   border-color: ${({ theme }) => theme.colors.blueDefault};
   }
 `
 
 export const YourMessage = styled.textarea`
   ${formInfo}
-  height: 200px;
+  height: 180px;
   color: ${({ theme }) => theme.colors.whiteDefault};
-  border-color: ${({ theme }) => theme.colors.bgMenu};
+  border-color: ${({ theme }) => theme.colors.grafit};
   
   &:focus {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   border-color: ${({ theme }) => theme.colors.blueDefault};
   }
+`
+
+export const PositionButton = styled.div`
+  padding: 50px 0 20px 0;
 `
 
 export const Submit = styled.button`
@@ -130,14 +135,22 @@ export const ContactInfo = styled.div`
 `
 
 export const InfoBox = styled.div`
-
+  margin: 40px 0;
 `
 
 export const InfoTitle = styled.h4`
   color: ${({ theme }) => theme.colors.blueDefault};
+  font-family: ${({ theme }) => theme.fonts.montRegular};
 `
 
 export const Information = styled.span`
-  color: ${({ theme }) => theme.colors.whiteDefault};
+  color: ${({ theme }) => theme.colors.grayText};
+  font-family: ${({ theme }) => theme.fonts.montLight};
   display: block;
+  line-height: 32px;
+  font-size: 14px;
+`
+
+export const PositionSocial = styled.div`
+
 `
