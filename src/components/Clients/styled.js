@@ -26,6 +26,8 @@ export const ContentClients = styled.div`
   margin-top: 46px;
   text-align: center;
   text-align: -webkit-center;
+
+ 
 `
 
 export const BorderClients = styled.div`
