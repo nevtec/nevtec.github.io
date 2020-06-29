@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
-import Icons from "../Icons";
+import Icons from "@components/Icons";
 
 export const FooterWrapper = styled.footer`
   width: 100%;
-  background: ${({ theme }) => theme.colors.bgMenu};;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: ${({ theme }) => theme.colors.bgMenu};
   display: flex;
 `
 
@@ -16,10 +13,9 @@ export const ContainerFooter = styled.div`
 `
 
 export const ContentFooter = styled.div`
-  width: 94%;
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
   justify-content: center;
   color: ${({ theme }) => theme.colors.grafit};
   display: grid;
