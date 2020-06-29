@@ -3,8 +3,9 @@ import Slider from "react-slick";
 
 import Title from '@components/common/Title';
 import Description from '@components/common/Description';
+import Testimony from '@components/Testimony';
 
-import { ClientsWrapper, ContainerClients, ContentHeader, ContentClients, BorderClients, AppleWrapper, ReactWrapper, DropboxWrapper, FirefoxWrapper } from './styled';
+import { ClientsWrapper, ContainerClients, ContentHeader, ContentClients, BorderClients, AppleWrapper, ReactWrapper, DropboxWrapper, FirefoxWrapper, DisplayLine,  LineOrientation, LineClients } from './styled';
 
 export default class Clients extends Component {
   
@@ -13,7 +14,7 @@ export default class Clients extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 6,
+      slidesToShow: 5,
       slidesToScroll: 1
     };
 
@@ -50,19 +51,20 @@ export default class Clients extends Component {
               </BorderClients>
 
               <BorderClients>
-                <DropboxWrapper />
-              </BorderClients>
-
-              <BorderClients>
-                <FirefoxWrapper />
-              </BorderClients>
-
-              <BorderClients>
                 <FirefoxWrapper />
               </BorderClients>
             </Slider>
           </ContentClients>
-            
+
+          <Testimony />
+
+          <DisplayLine>
+            <LineOrientation>
+              <LineClients />
+            </LineOrientation>
+          </DisplayLine>
+          
+          
         </ContainerClients>
 
       </ClientsWrapper>

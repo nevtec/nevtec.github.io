@@ -38,6 +38,7 @@ const theme = {
     bgWorks: "#111111",
     retina: " #0000009c",
     clientsBg: "#e6e6e6",
+    grafit: "#555555",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
