@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import avatar from '@images/avatar.jpg';
+import avatar from "@images/avatar.jpg"
 
 export const TestimonyWrapper = styled.div`
   width: 78%;
@@ -8,8 +8,15 @@ export const TestimonyWrapper = styled.div`
   text-align: center;
   text-align: -webkit-center;
 
-  &::before{
-    content: '';
+  div.slick-slider {
+    button.slick-arrow::before {
+      color: ${({ theme }) => theme.colors.grafit};
+      font-size: 24px;
+    }
+  }
+
+  &::before {
+    content: "";
     display: block;
     width: 60%;
     border-bottom: 1px solid;
@@ -23,7 +30,7 @@ export const TestimonyWrapper = styled.div`
 `
 
 export const TestimonyBox = styled.div`
-  &:focus{
+  &:focus {
     outline-style: none;
   }
 `
@@ -58,9 +65,7 @@ export const AvatarTestimony = styled.div`
   background-size: cover;
 `
 
-export const InfoTestimony = styled.div`
-
-`
+export const InfoTestimony = styled.div``
 
 export const TimonyName = styled.h3`
   font-family: "montserrat-semibold", sans-serif;

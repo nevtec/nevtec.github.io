@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import Icons from "../Icons";
+import Icons from "../Icons"
 
 export const ClientsWrapper = styled.section`
   width: 100%;
@@ -10,7 +10,7 @@ export const ClientsWrapper = styled.section`
 `
 
 export const ContainerClients = styled.div`
-  ${ ({ theme }) => theme.setContainer()};
+  ${({ theme }) => theme.setContainer()};
   width: 86%;
 `
 
@@ -28,13 +28,21 @@ export const ContentClients = styled.div`
   text-align: center;
   text-align: -webkit-center;
 
- 
+  div.slick-slider {
+    button.slick-arrow {
+      display: none !important;
+    }
+
+    ul > li > button::before {
+      font-size: 12px;
+    }
+  }
 `
 
 export const BorderClients = styled.div`
   border-style: none;
 
-  &:focus{
+  &:focus {
     outline-style: none;
   }
 `

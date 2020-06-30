@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { Component } from "react"
 
-import { TestimonyWrapper, TestimonyBox, TestimonyText, PositionTest, AvatarTestimony, InfoTestimony, TimonyName, TimonyPos } from './styled';
+import SliderShow from "@components/common/SliderShow"
 
+import {
+  TestimonyWrapper,
+  TestimonyBox,
+  TestimonyText,
+  PositionTest,
+  AvatarTestimony,
+  InfoTestimony,
+  TimonyName,
+  TimonyPos,
+} from "./styled"
 
 export default class Testimony extends Component {
-
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-
     return (
       <TestimonyWrapper>
-         <Slider {...settings}>
+        <SliderShow dots={false} slidesToShow={1}>
           <TestimonyBox>
             <TestimonyText>
               1. Excepturi nam cupiditate culpa doloremque deleniti repellat.
-              Veniam quos repellat voluptas animi adipisci.Nisi eaque consequatur.
-              Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+              Veniam quos repellat voluptas animi adipisci.Nisi eaque
+              consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+              ipsam temporibus quisquam vel.
             </TestimonyText>
             <PositionTest>
               <AvatarTestimony></AvatarTestimony>
@@ -36,8 +37,9 @@ export default class Testimony extends Component {
           <TestimonyBox>
             <TestimonyText>
               2. Excepturi nam cupiditate culpa doloremque deleniti repellat.
-              Veniam quos repellat voluptas animi adipisci.Nisi eaque consequatur.
-              Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+              Veniam quos repellat voluptas animi adipisci.Nisi eaque
+              consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+              ipsam temporibus quisquam vel.
             </TestimonyText>
             <PositionTest>
               <AvatarTestimony></AvatarTestimony>
@@ -51,8 +53,9 @@ export default class Testimony extends Component {
           <TestimonyBox>
             <TestimonyText>
               3. Excepturi nam cupiditate culpa doloremque deleniti repellat.
-              Veniam quos repellat voluptas animi adipisci.Nisi eaque consequatur.
-              Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+              Veniam quos repellat voluptas animi adipisci.Nisi eaque
+              consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+              ipsam temporibus quisquam vel.
             </TestimonyText>
             <PositionTest>
               <AvatarTestimony></AvatarTestimony>
@@ -62,8 +65,8 @@ export default class Testimony extends Component {
               </InfoTestimony>
             </PositionTest>
           </TestimonyBox>
-        </Slider>
-     </TestimonyWrapper>
+        </SliderShow>
+      </TestimonyWrapper>
     )
   }
 }

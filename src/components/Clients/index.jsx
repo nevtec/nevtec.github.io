@@ -1,9 +1,9 @@
 import React, { Component } from "react"
-import Slider from "react-slick"
 
 import Title from "@components/common/Title"
 import Description from "@components/common/Description"
 import Testimony from "@components/Testimony"
+import SliderShow from "@components/common/SliderShow"
 
 import {
   ClientsWrapper,
@@ -22,14 +22,6 @@ import {
 
 export default class Clients extends Component {
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-    }
-
     return (
       <ClientsWrapper id="Clients">
         <ContainerClients>
@@ -41,7 +33,7 @@ export default class Clients extends Component {
           </ContentHeader>
 
           <ContentClients>
-            <Slider {...settings}>
+            <SliderShow dots={true} slidesToShow={5}>
               <BorderClients>
                 <AppleWrapper />
               </BorderClients>
@@ -65,7 +57,7 @@ export default class Clients extends Component {
               <BorderClients>
                 <FirefoxWrapper />
               </BorderClients>
-            </Slider>
+            </SliderShow>
           </ContentClients>
 
           <Testimony />
