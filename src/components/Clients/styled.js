@@ -22,7 +22,8 @@ export const ContentHeader = styled.header`
 `
 
 export const ContentClients = styled.div`
-  width: 94%;
+  max-width: 1000px;
+  width: 100%;
   margin-top: 46px;
   text-align: center;
   text-align: -webkit-center;
@@ -39,7 +40,8 @@ export const BorderClients = styled.div`
 `
 
 const iconsClients = `
-  width: 64%;
+  max-width: 130px;
+  width: 100%;
   transition: all 0.6s;
 `
 
