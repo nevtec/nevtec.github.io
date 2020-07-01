@@ -40,6 +40,7 @@ const theme = {
     clientsBg: "#e6e6e6",
     grafit: "#555555",
     brForm: "#0000008f",
+    btnHover: "#246b90",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",

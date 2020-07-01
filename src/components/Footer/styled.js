@@ -42,6 +42,7 @@ export const TitleFooter = styled.h3`
 `
 export const ContentEmail = styled.div`
   background: ${({ theme }) => theme.colors.writeHove};
+  max-width: 440px;
   width: 100%;
   height: 60px;
   display: flex;
@@ -55,8 +56,9 @@ export const EmailWrapper = styled(Icons.Email)`
 
 export const EmailLine = styled.input`
   background: none;
+  max-width: 260px;
+  width: 100%;
   height: 28px;
-  width: 60%;
   padding-top: 14px;
   color: ${({ theme }) => theme.colors.whiteDefault};
   border-style: none;
@@ -67,8 +69,9 @@ export const EmailLine = styled.input`
 `
 
 export const EmailBtn = styled.button`
-  width: 26%;
-  height: 100%;
+  max-width: 124px;
+  width: 100%;
+  height: 96%;
   color: ${({ theme }) => theme.colors.whiteDefault};
   background: ${({ theme }) => theme.colors.blueDefault};
   font-family: ${({ theme }) => theme.fonts.montRegular};
@@ -77,13 +80,14 @@ export const EmailBtn = styled.button`
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: 0.6s;
 
   &:focus{
     outline-style: none;
   }
 
   &:hover{
-    background: #246b90;
+    background: ${({ theme }) => theme.colors.btnHover};
   }
 `
 
