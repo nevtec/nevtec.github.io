@@ -9,7 +9,7 @@ import { AboutWrapper, ContainerAbout, ContentHeader, ContentText, ParagraphAbou
 const About = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 2000, offset : 210 , });
+    Aos.init({ duration: 2000, offset : 210, once: true, });
   }, []);
 
   return (

@@ -28,13 +28,11 @@ export const ContentHeader = styled.header`
 `
 
 export const ContentText = styled.div`
+  width: 100%;
+  max-width: 1000px;
   font-family: ${({ theme }) => theme.fonts.montLight};
-  width: 78%;
   text-align: center;
 
-  ${({ theme }) => theme.media.phone`
-    width: 100%;
-  `} 
 `
 
 export const ParagraphAbout = styled.p`
@@ -86,14 +84,15 @@ export const ScoreContent = styled.div`
   ${({ theme }) =>
     theme.generateBreakpoint(540,
     `
+    width: 100%;
+    max-width: 200px;
     font-size: 34px;
-    width: 50%;
     border-style: none;
     grid-template-columns: 1fr;
-    border-bottom: 1px solid ${theme.colors.lineColor}; //TODO
+    border-bottom: 1px solid ${theme.colors.lineColor};
 
     &:nth-child(even){
-      border-bottom: 1px solid ${theme.colors.lineColor}; //TODO
+      border-bottom: 1px solid ${theme.colors.lineColor};
     `
   )}
 `
