@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Icons from "../Icons";
+import Icons from "@components/Icons";
 
 export const ServicesWrapper = styled.section`
   width: 100%;
@@ -18,11 +18,13 @@ export const ContentHeader = styled.header`
   text-align: -webkit-center;
   padding-top: 146px;
   width: 100%;
+  max-width: 1110px;
 
   &::after{
     content: '';
     display: block;
-    width: 40%;
+    width: 100%;
+    max-width: 540px;
     border-bottom: 1px solid;
     border-color: ${({ theme }) => theme.colors.linelight};
     margin-bottom: 16px;
@@ -71,7 +73,8 @@ export const WorldWrapper = styled(Icons.World)`
 `
 
 export const TextBox = styled.div`
-  width: 80%;
+  max-width: 460px;
+  width: 100%;
 
   ${({ theme }) => theme.media.tablet`
     place-self: center;
