@@ -3,7 +3,6 @@ import Aos from "aos";
 
 import Title from "@components/common/Title";
 import Description from "@components/common/Description";
-import ServiceShowIn from '@components/common/ServiceShow';
 
 import {
   WorksWrapper,
@@ -82,7 +81,7 @@ const Works = () => {
             </FigureBox>
 
             <FigureBox>
-              <ServiceShowIn variant="primary">
+              <FigureContent>
                 <TextBox>
                   <PositionText>
                     <LinkWrapper />
@@ -90,7 +89,7 @@ const Works = () => {
                     <SubBox>Paragráfo</SubBox>
                   </PositionText>
                 </TextBox>
-              </ServiceShowIn>
+              </FigureContent>
             </FigureBox>
 
           </WorksContent>

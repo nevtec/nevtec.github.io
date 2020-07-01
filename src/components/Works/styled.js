@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-import Icons from "@components/Icons";
+import Icons from "@components/Icons"
 
-import mujer from "@images/mujer.jpg";
+import mujer from "@images/mujer.jpg"
 
 export const WorksWrapper = styled.section`
   display: flex;
@@ -23,7 +23,7 @@ export const BgWorks = styled.div`
 `
 
 export const ContainerWorks = styled.div`
-  ${ ({ theme }) => theme.setContainer()};
+  ${({ theme }) => theme.setContainer()};
 `
 
 export const IntroWrapper = styled.header`
@@ -32,8 +32,8 @@ export const IntroWrapper = styled.header`
   padding-top: 146px;
   width: 100%;
 
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     display: block;
     width: 100%;
     max-width: 540px;
@@ -58,7 +58,7 @@ export const WorksContent = styled.div`
 
   ${({ theme }) => theme.media.tablet`
     grid-template-columns: 1fr;
-  `} 
+  `}
 `
 
 export const FigureBox = styled.div`
@@ -66,23 +66,23 @@ export const FigureBox = styled.div`
   width: 100%;
   height: 416px;
   position: relative;
+  overflow: hidden;
+
+  &:hover div,
+  &:focus div {
+    transform: scale(1.2);
+  }
 `
 
-export const FigureContent = styled.figure`
+export const FigureContent = styled.div`
   background-image: url(${mujer});
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  overflow: hidden;
-  position: relative;
+  background-size: cover;
   max-width: 565px;
   width: 100%;
   height: 100%;
   transition: all 0.6s;
-
-  &:hover{
-    background-size: 110%;
-  }
 `
 
 export const TextBox = styled.figcaption`
@@ -98,8 +98,8 @@ export const TextBox = styled.figcaption`
   opacity: 0;
   transform: translateY(0px);
   transition: transform 0.6s, opacity 0.6s;
-  
-  &:hover{
+
+  &:hover {
     opacity: 1;
     transform: translateY(-4px);
   }
@@ -121,7 +121,7 @@ export const LinkWrapper = styled(Icons.Link)`
   border-radius: 50px;
   padding: 8px;
 
-  &:hover{
+  &:hover {
     background-color: ${({ theme }) => theme.colors.whiteDefault};
     color: ${({ theme }) => theme.colors.bgMenu};
   }
