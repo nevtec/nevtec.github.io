@@ -34,7 +34,7 @@ import {
 
 const Contact = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 210 })
+    Aos.init({ duration: 2000, offset: 210, once: true, })
   }, [])
 
   return (
