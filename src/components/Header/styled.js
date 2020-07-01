@@ -19,7 +19,8 @@ export const ContainerHeader = styled.div`
 `
 
 export const HeaderLogo = styled.div`
-    max-width: 100%;
+    width: 100%;
+    max-width: 130px;
     margin-right: auto;
     padding: 38px 0;
 `
