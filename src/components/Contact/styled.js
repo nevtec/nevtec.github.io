@@ -17,10 +17,11 @@ export const ContainerContact = styled.div`
 `
 
 export const ContentHeader = styled.header`
+  max-width: 1000px;
+  width: 100%;
   text-align: center;
   text-align: -webkit-center;
   padding-top: 146px;
-  width: 100%;
 `
 
 export const ContentContact = styled.div`
@@ -59,76 +60,6 @@ export const TitleContact = styled.h3`
   padding-bottom: 20px;
 `
 
-export const FormWrapper = styled.form`
-  text-align: center;
-  text-align: -webkit-center;
-`
-
-export const FieldOrientation = styled.fieldset`
-  border-style: none;
-  width: 86%;
-`
-
-const formInfo = `
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-  background: none;
-  border: none;
-  border-bottom: 1px solid;
-  outline: 0;
-  padding-bottom: 10px;
-  margin-bottom: 24px;
-  transition: all 0.8s;
-`
-
-export const YourInfo = styled.input`
-  ${formInfo}
-  color: ${({ theme }) => theme.colors.whiteDefault};
-  border-color: ${({ theme }) => theme.colors.grafit};
-  
-  &:focus {
-  border-bottom: 1px solid;
-  border-color: ${({ theme }) => theme.colors.blueDefault};
-  }
-`
-
-export const YourMessage = styled.textarea`
-  ${formInfo}
-  height: 180px;
-  color: ${({ theme }) => theme.colors.whiteDefault};
-  border-color: ${({ theme }) => theme.colors.grafit};
-  
-  &:focus {
-  border-bottom: 1px solid;
-  border-color: ${({ theme }) => theme.colors.blueDefault};
-  }
-`
-
-export const PositionButton = styled.div`
-  padding: 50px 0 20px;
-`
-
-export const Submit = styled.button`
-  width: 100%;
-  height: 50px;
-  color: ${({ theme }) => theme.colors.whiteDefault};
-  background: ${({ theme }) => theme.colors.blueDefault};
-  font-family: ${({ theme }) => theme.fonts.montRegular};
-  border-style: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-
-  &:focus{
-    outline-style: none;
-  }
-
-  &:hover{
-    background: #246b90;
-  }
-`
-
 export const ContactInfo = styled.div`
   width: 86%;
   margin: auto;
@@ -149,8 +80,4 @@ export const Information = styled.span`
   display: block;
   line-height: 32px;
   font-size: 14px;
-`
-
-export const PositionSocial = styled.div`
-
 `

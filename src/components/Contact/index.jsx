@@ -3,6 +3,7 @@ import Aos from "aos"
 
 import Title from "@components/common/Title"
 import Description from "@components/common/Description"
+import Form from "@components/common/Form"
 
 import {
   ContactWrapper,
@@ -13,17 +14,10 @@ import {
   ContactSecondary,
   TitleOrientation,
   TitleContact,
-  FormWrapper,
-  FieldOrientation,
-  YourInfo,
-  YourMessage,
-  PositionButton,
-  Submit,
   ContactInfo,
   InfoBox,
   InfoTitle,
-  Information,
-  PositionSocial,
+  Information
 } from "./styled"
 
 import {
@@ -46,6 +40,7 @@ const Contact = () => {
   return (
     <ContactWrapper id="Contact">
       <ContainerContact>
+
         <ContentHeader data-aos="fade-up">
           <Description variant="light">Contact Us</Description>
           <Title variant="black">
@@ -53,45 +48,13 @@ const Contact = () => {
           </Title>
         </ContentHeader>
 
-        <ContentContact>
+        <ContentContact data-aos="fade-up">
+
           <ContactPrimary>
             <TitleOrientation>
               <TitleContact>Send Us A Message</TitleContact>
             </TitleOrientation>
-
-            <FormWrapper>
-              <FieldOrientation>
-                <YourInfo
-                  name="contactName"
-                  type="text"
-                  placeholder="Your Name"
-                  required
-                />
-                <YourInfo
-                  name="contactEmail"
-                  type="email"
-                  placeholder="Your E-mail"
-                  required
-                />
-                <YourInfo
-                  name="contactSubject"
-                  type="text"
-                  placeholder="Subject"
-                  required
-                />
-                <YourMessage
-                  name="contactMessage"
-                  type="text"
-                  placeholder="Your Message"
-                  row="10"
-                  cols="50"
-                  required
-                ></YourMessage>
-                <PositionButton>
-                  <Submit>Submit</Submit>
-                </PositionButton>
-              </FieldOrientation>
-            </FormWrapper>
+            <Form />
           </ContactPrimary>
 
           <ContactSecondary>
@@ -120,7 +83,7 @@ const Contact = () => {
                 <Information>Phone: (+63) 555 1212</Information>
               </InfoBox>
 
-              <PositionSocial>
+              <div>
                 <NavWrapper>
                   <UlSocial>
                     <LiSocial>
@@ -154,10 +117,11 @@ const Contact = () => {
                     </LiSocial>
                   </UlSocial>
                 </NavWrapper>
-              </PositionSocial>
+              </div>
             </ContactInfo>
           </ContactSecondary>
         </ContentContact>
+
       </ContainerContact>
     </ContactWrapper>
   )
