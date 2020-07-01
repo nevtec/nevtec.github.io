@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-import Icons from "../Icons";
+import Icons from "@components/Icons";
+
+import mujer from "@images/mujer.jpg";
 
 export const WorksWrapper = styled.section`
   display: flex;
@@ -33,16 +35,19 @@ export const IntroWrapper = styled.header`
   &::after{
     content: '';
     display: block;
-    width: 40%;
+    width: 100%;
+    max-width: 540px;
     border-bottom: 1px solid;
     border-color: ${({ theme }) => theme.colors.linelight};
     margin-bottom: 16px;
   }
 `
+
 export const WorksContent = styled.div`
   text-align: center;
   text-align: -webkit-center;
-  width: 90%;
+  width: 100%;
+  max-width: 1130px;
   margin-top: -170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,26 +62,26 @@ export const WorksContent = styled.div`
 `
 
 export const FigureBox = styled.div`
- width: 100%;
- height: 26rem;
- position: relative;
+  max-width: 565px;
+  width: 100%;
+  height: 416px;
+  position: relative;
 `
 
 export const FigureContent = styled.figure`
+  background-image: url(${mujer});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
   overflow: hidden;
   position: relative;
+  max-width: 565px;
   width: 100%;
   height: 100%;
-`
-
-export const PhotoEffect = styled.img`
-  max-width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.6s;
+  transition: all 0.6s;
 
   &:hover{
-    transform: translateY(-50px);
+    background-size: 110%;
   }
 `
 

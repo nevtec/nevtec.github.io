@@ -1,19 +1,30 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 
-import Title from '@components/common/Title';
-import Description from '@components/common/Description';
+import Title from "@components/common/Title";
+import Description from "@components/common/Description";
+import ServiceShowIn from '@components/common/ServiceShow';
 
-import { WorksWrapper, BgTitle, BgWorks, ContainerWorks, IntroWrapper, WorksContent, FigureBox, FigureContent, PhotoEffect, TextBox, PositionText, LinkWrapper, TitleBox, SubBox } from './styled';
-
-import img from '@images/mujer.jpg';
-
+import {
+  WorksWrapper,
+  BgTitle,
+  BgWorks,
+  ContainerWorks,
+  IntroWrapper,
+  WorksContent,
+  FigureBox,
+  FigureContent,
+  TextBox,
+  PositionText,
+  LinkWrapper,
+  TitleBox,
+  SubBox,
+} from "./styled"
 
 const Works = () => {
-
   useEffect(() => {
-    Aos.init({ duration: 2000, offset: 210, once: true,});
-  }, []);
+    Aos.init({ duration: 2000, offset: 210, once: true })
+  }, [])
 
   return (
     <WorksWrapper id="Works">
@@ -21,17 +32,21 @@ const Works = () => {
         <ContainerWorks data-aos="fade-up">
           <IntroWrapper>
             <Description variant="light">RECENT WORKS</Description>
-            <Title variant="black">We love what we do, check out some of our latest works</Title>
+            <Title variant="black">
+              We love what we do, check out some of our latest works
+            </Title>
           </IntroWrapper>
         </ContainerWorks>
       </BgTitle>
+
       <BgWorks>
+
         <ContainerWorks>
+
           <WorksContent data-aos="fade-up">
 
             <FigureBox>
               <FigureContent>
-                <PhotoEffect src={img} />
                 <TextBox>
                   <PositionText>
                     <LinkWrapper />
@@ -44,49 +59,47 @@ const Works = () => {
 
             <FigureBox>
               <FigureContent>
-                <PhotoEffect src={img} />
                 <TextBox>
-                <PositionText>
+                  <PositionText>
                     <LinkWrapper />
-                  <TitleBox>SHUTTERBUG</TitleBox>
-                  <SubBox>Paragráfo</SubBox>
-                </PositionText>
+                    <TitleBox>SHUTTERBUG</TitleBox>
+                    <SubBox>Paragráfo</SubBox>
+                  </PositionText>
                 </TextBox>
               </FigureContent>
             </FigureBox>
 
             <FigureBox>
               <FigureContent>
-                <PhotoEffect src={img} />
                 <TextBox>
-                <PositionText>
-                  <LinkWrapper />
-                  <TitleBox>SHUTTERBUG</TitleBox>
-                  <SubBox>Paragráfo</SubBox>
-                </PositionText>
+                  <PositionText>
+                    <LinkWrapper />
+                    <TitleBox>SHUTTERBUG</TitleBox>
+                    <SubBox>Paragráfo</SubBox>
+                  </PositionText>
                 </TextBox>
               </FigureContent>
             </FigureBox>
 
             <FigureBox>
-              <FigureContent>
-                <PhotoEffect src={img} />
+              <ServiceShowIn variant="primary">
                 <TextBox>
-                <PositionText>
-                  <LinkWrapper />
-                  <TitleBox>SHUTTERBUG</TitleBox>
-                  <SubBox>Paragráfo</SubBox>
-                </PositionText>
+                  <PositionText>
+                    <LinkWrapper />
+                    <TitleBox>SHUTTERBUG</TitleBox>
+                    <SubBox>Paragráfo</SubBox>
+                  </PositionText>
                 </TextBox>
-              </FigureContent>
+              </ServiceShowIn>
             </FigureBox>
 
           </WorksContent>
-        </ContainerWorks>
-      </BgWorks>
 
+        </ContainerWorks>
+
+      </BgWorks>
     </WorksWrapper>
   )
-};
+}
 
 export default Works;
