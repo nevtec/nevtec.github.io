@@ -1,9 +1,10 @@
-import React, { Component } from "react"
+import React, { useEffect } from "react";
+import Aos from "aos";
 
-import Title from "@components/common/Title"
-import Description from "@components/common/Description"
-import Testimony from "@components/Testimony"
-import SliderShow from "@components/common/SliderShow"
+import Title from "@components/common/Title";
+import Description from "@components/common/Description";
+import Testimony from "@components/Testimony";
+import SliderShow from "@components/common/SliderShow";
 
 import {
   ClientsWrapper,
@@ -20,55 +21,60 @@ import {
   LineClients,
 } from "./styled"
 
-export default class Clients extends Component {
-  render() {
-    return (
-      <ClientsWrapper id="Clients">
-        <ContainerClients>
-          <ContentHeader data-aos="fade-up">
-            <Description variant="light">Our Clients</Description>
-            <Title variant="light">
-              Glint has been honored to partner up with these clients
-            </Title>
-          </ContentHeader>
+const Clients = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, offset: 210, });
+  }, []);
 
-          <ContentClients>
-            <SliderShow dots={true} slidesToShow={5}>
-              <BorderClients>
-                <AppleWrapper />
-              </BorderClients>
+  return (
+    <ClientsWrapper id="Clients">
+      <ContainerClients>
+        <ContentHeader data-aos="fade-up">
+          <Description variant="light">Our Clients</Description>
+          <Title variant="light">
+            Glint has been honored to partner up with these clients
+          </Title>
+        </ContentHeader>
 
-              <BorderClients>
-                <AppleWrapper />
-              </BorderClients>
+        <ContentClients data-aos="fade-up">
+          <SliderShow dots={true} slidesToShow={5}>
+            <BorderClients>
+              <AppleWrapper />
+            </BorderClients>
 
-              <BorderClients>
-                <ReactWrapper />
-              </BorderClients>
+            <BorderClients>
+              <AppleWrapper />
+            </BorderClients>
 
-              <BorderClients>
-                <ReactWrapper />
-              </BorderClients>
+            <BorderClients>
+              <ReactWrapper />
+            </BorderClients>
 
-              <BorderClients>
-                <DropboxWrapper />
-              </BorderClients>
+            <BorderClients>
+              <ReactWrapper />
+            </BorderClients>
 
-              <BorderClients>
-                <FirefoxWrapper />
-              </BorderClients>
-            </SliderShow>
-          </ContentClients>
+            <BorderClients>
+              <DropboxWrapper />
+            </BorderClients>
 
-          <Testimony />
+            <BorderClients>
+              <FirefoxWrapper />
+            </BorderClients>
+          </SliderShow>
+        </ContentClients>
 
-          <DisplayLine>
-            <LineOrientation>
-              <LineClients />
-            </LineOrientation>
-          </DisplayLine>
-        </ContainerClients>
-      </ClientsWrapper>
-    )
-  }
+        <Testimony />
+
+        <DisplayLine>
+          <LineOrientation>
+            <LineClients />
+          </LineOrientation>
+        </DisplayLine>
+      </ContainerClients>
+    </ClientsWrapper>
+  );
+  
 }
+
+export default Clients;

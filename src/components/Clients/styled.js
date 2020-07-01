@@ -19,6 +19,7 @@ export const ContentHeader = styled.header`
   text-align: -webkit-center;
   padding-top: 146px;
   width: 100%;
+  max-width: 1000px;
 `
 
 export const ContentClients = styled.div`

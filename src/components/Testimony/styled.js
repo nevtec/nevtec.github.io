@@ -3,7 +3,8 @@ import styled from "styled-components"
 import avatar from "@images/avatar.jpg"
 
 export const TestimonyWrapper = styled.div`
-  width: 78%;
+  max-width: 900px;
+  width: 100%;
   margin-top: 80px;
   text-align: center;
   text-align: -webkit-center;
@@ -18,15 +19,12 @@ export const TestimonyWrapper = styled.div`
   &::before {
     content: "";
     display: block;
-    width: 60%;
+    width: 100%;
+    max-width: 540px;
     border-bottom: 1px solid;
     border-color: ${({ theme }) => theme.colors.linelight};
     margin-bottom: 16px;
   }
-
-  ${({ theme }) => theme.media.desktop`
-    width: 100%;
-  `}
 `
 
 export const TestimonyBox = styled.div`
