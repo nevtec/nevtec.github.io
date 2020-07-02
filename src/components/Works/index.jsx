@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
+import React, { useEffect } from "react"
+import Aos from "aos"
 
-import Title from "@components/common/Title";
-import Description from "@components/common/Description";
+import Title from "@components/common/Title"
+import Description from "@components/common/Description"
 
 import {
   WorksWrapper,
@@ -19,6 +19,8 @@ import {
   TitleBox,
   SubBox,
 } from "./styled"
+
+import { mockPortifolios } from "./mocks"
 
 const Works = () => {
   useEffect(() => {
@@ -39,66 +41,26 @@ const Works = () => {
       </BgTitle>
 
       <BgWorks>
-
         <ContainerWorks>
-
           <WorksContent data-aos="fade-up">
-
-            <FigureBox>
-              <FigureContent>
-                <TextBox>
-                  <PositionText>
-                    <LinkWrapper />
-                    <TitleBox>SHUTTERBUG</TitleBox>
-                    <SubBox>Paragráfo</SubBox>
-                  </PositionText>
-                </TextBox>
-              </FigureContent>
-            </FigureBox>
-
-            <FigureBox>
-              <FigureContent>
-                <TextBox>
-                  <PositionText>
-                    <LinkWrapper />
-                    <TitleBox>SHUTTERBUG</TitleBox>
-                    <SubBox>Paragráfo</SubBox>
-                  </PositionText>
-                </TextBox>
-              </FigureContent>
-            </FigureBox>
-
-            <FigureBox>
-              <FigureContent>
-                <TextBox>
-                  <PositionText>
-                    <LinkWrapper />
-                    <TitleBox>SHUTTERBUG</TitleBox>
-                    <SubBox>Paragráfo</SubBox>
-                  </PositionText>
-                </TextBox>
-              </FigureContent>
-            </FigureBox>
-
-            <FigureBox>
-              <FigureContent>
-                <TextBox>
-                  <PositionText>
-                    <LinkWrapper />
-                    <TitleBox>SHUTTERBUG</TitleBox>
-                    <SubBox>Paragráfo</SubBox>
-                  </PositionText>
-                </TextBox>
-              </FigureContent>
-            </FigureBox>
-
+            {mockPortifolios.map((portifolio, index) => (
+              <FigureBox key={index}>
+                <FigureContent img={portifolio.img}>
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <TitleBox>{portifolio.title}</TitleBox>
+                      <SubBox>{portifolio.subTitle}</SubBox>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+            ))}
           </WorksContent>
-
         </ContainerWorks>
-
       </BgWorks>
     </WorksWrapper>
   )
 }
 
-export default Works;
+export default Works

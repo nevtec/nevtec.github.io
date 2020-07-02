@@ -2,8 +2,6 @@ import styled from "styled-components"
 
 import Icons from "@components/Icons"
 
-import mujer from "@images/mujer.jpg"
-
 export const WorksWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -75,7 +73,7 @@ export const FigureBox = styled.div`
 `
 
 export const FigureContent = styled.div`
-  background-image: url(${mujer});
+  background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
