@@ -39,7 +39,6 @@ const scrollToContact = Contact => () => scrollTo(Contact)
 const Menu = () => {
   const [scroll, setScroll] = useState(0)
 
-  //TODO: Verificar a melhora de peformance
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
@@ -48,11 +47,11 @@ const Menu = () => {
         setScroll(0)
       }
     })
-  })
+  }, [scroll])
 
   return (
     <MenuWrapper>
-      <BtnContent for="bt_menu" scroll={scroll}>
+      <BtnContent htmlFor="bt_menu" scroll={scroll}>
         <MenuName>Menu</MenuName>
         &#9776;
       </BtnContent>
