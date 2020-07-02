@@ -11,7 +11,7 @@ export const MenuWrapper = styled.div`
 export const BtnContent = styled.label`
   height: 40px;
   background-color: ${({ scroll, theme }) =>
-    scroll > 50 ? theme.colors.bgBtnMenu : "trasparent"};
+    scroll > 50 ? theme.colors.bgMenu : "trasparent"};
   position: fixed;
   right: -8px;
   top: -8px;
@@ -20,6 +20,7 @@ export const BtnContent = styled.label`
   font-size: 28px;
   cursor: pointer;
   z-index: 99;
+  transition: all 0.6s;
 `
 
 export const MenuName = styled.span`

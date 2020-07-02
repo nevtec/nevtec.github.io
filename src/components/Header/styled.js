@@ -18,7 +18,7 @@ export const ContainerHeader = styled.div`
     ${ ({ theme }) => theme.setContainer()};
 `
 
-export const HeaderLogo = styled.div`
+export const PositionLogo = styled.div`
     width: 100%;
     max-width: 130px;
     margin-right: auto;

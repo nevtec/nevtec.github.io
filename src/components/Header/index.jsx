@@ -10,7 +10,7 @@ import Title from '@components/common/Title';
 import Description from '@components/common/Description';
 import BtnStyled from '@components/common/BtnStyles';
 
-import { HeaderWrapper, ContainerHeader, HeaderLogo, ContentHeader, BtnWrapper, ScrollWrapper } from './styled';
+import { HeaderWrapper, ContainerHeader, PositionLogo, ContentHeader, BtnWrapper, ScrollWrapper } from './styled';
 
 const scrollToIndex = (Header) => () => scrollTo(Header);
 
@@ -29,9 +29,9 @@ const Header = () => {
         <Menu />
         <SocialMedia />
 
-        <HeaderLogo>
+        <PositionLogo>
           <Logo />
-        </HeaderLogo>
+        </PositionLogo>
 
         <ContentHeader data-aos="fade-up">
           <Description variant="primary">
