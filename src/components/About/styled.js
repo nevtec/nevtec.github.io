@@ -20,7 +20,8 @@ export const ContentHeader = styled.header`
   &::after{
     content: '';
     display: block;
-    width: 40%;
+    width: 100%;
+    max-width: 420px;
     border-bottom: 1px solid;
     border-color: ${({ theme }) => theme.colors.lineColor};
     margin-bottom: 16px;
