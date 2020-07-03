@@ -58,7 +58,7 @@ export const WorksContent = styled.div`
 export const FigureBox = styled.div`
   max-width: 565px;
   width: 100%;
-  height: 416px;
+  height: 560px;
   position: relative;
   overflow: hidden;
 
@@ -66,6 +66,19 @@ export const FigureBox = styled.div`
   &:focus div {
     transform: scale(1.1);
   }
+
+  /*
+  CONSEGUI O MESMO EFEITO USANDO O NTH-CHILD. ME AJUDA, PLEO AMOR DE DEUS!
+
+  &:nth-child(2) {
+    height: 620px;
+  }
+
+  &:nth-child(3) {
+    height: 620px;
+    margin-top: -60px;
+  }
+  */
 `
 
 export const FigureContent = styled.div`
@@ -83,33 +96,26 @@ export const TextBox = styled.figcaption`
   width: 100%;
   height: 100%;
   position: absolute;
-  top: auto;
-  bottom: -4px;
-  left: 0;
   background-color: ${({ theme }) => theme.colors.retina};
   color: ${({ theme }) => theme.colors.whiteDefault};
-
   opacity: 0;
-  transform: translateY(0px);
-  transition: transform 0.6s, opacity 0.6s;
 
   &:hover {
     opacity: 1;
-    transform: translateY(-4px);
   }
 `
 
 export const PositionText = styled.div`
   text-align: left;
-  padding-top: 304px;
-  padding-left: 16px;
+  padding-top: 396px;
+  padding-left: 70px;
   line-height: 0.6;
 `
 
 export const LinkWrapper = styled(Icons.Link)`
   width: 24px;
   position: relative;
-  top: -288px;
+  top: -332px;
   cursor: pointer;
   border: 1px solid;
   border-radius: 50px;
@@ -124,11 +130,12 @@ export const LinkWrapper = styled(Icons.Link)`
 export const TitleBox = styled.h3`
   font-family: ${({ theme }) => theme.fonts.montLight};
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
+  letter-spacing: 2px;
 `
 
 export const SubBox = styled.p`
   font-family: ${({ theme }) => theme.fonts.montLight};
   color: ${({ theme }) => theme.colors.grayText};
-  font-size: 14px;
+  font-size: 12px;
 `
