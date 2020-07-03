@@ -50,10 +50,6 @@ export const WorksContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  position: relative;
-  top: 0;
-  left: -40px;
-
   ${({ theme }) => theme.media.tablet`
     grid-template-columns: 1fr;
   `}
@@ -68,7 +64,7 @@ export const FigureBox = styled.div`
 
   &:hover div,
   &:focus div {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 `
 
