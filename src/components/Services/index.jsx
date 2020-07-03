@@ -1,8 +1,8 @@
-import React, { useEffect } from "react"
-import Aos from "aos"
+import React, { useEffect } from "react";
+import Aos from "aos";
 
-import Title from "@components/common/Title"
-import Description from "@components/common/Description"
+import Title from "@components/common/Title";
+import Description from "@components/common/Description";
 
 import {
   ServicesWrapper,
@@ -128,4 +128,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;
