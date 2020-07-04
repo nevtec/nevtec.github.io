@@ -48,17 +48,17 @@ export const WorksContent = styled.div`
   max-width: 1130px;
   margin-top: -170px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 
-  ${({ theme }) => theme.media.tablet`
-    grid-template-columns: 1fr;
+  ${({ theme }) => theme.media.phone`
+    grid-template-columns: auto;
   `}
 `
 
 export const FigureBox = styled.div`
   max-width: 565px;
   width: 100%;
-  height: 560px;
+  height: 540px;
   position: relative;
   overflow: hidden;
 
@@ -66,19 +66,30 @@ export const FigureBox = styled.div`
   &:focus div {
     transform: scale(1.1);
   }
-
-  /*
-  CONSEGUI O MESMO EFEITO USANDO O NTH-CHILD. ME AJUDA, PLEO AMOR DE DEUS!
-
-  &:nth-child(2) {
-    height: 620px;
+  
+ 
+  &:first-child {
+    height: 570px;  
   }
 
-  &:nth-child(3) {
-    height: 620px;
-    margin-top: -60px;
+  &:nth-child(4){
+    margin-top: -30px;
   }
-  */
+
+  &:last-child {
+    height: 570px;
+    margin-top: -30px;
+  }
+
+  ${({ theme }) => theme.media.phone`
+    &:nth-child(3){
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-top: 0px;
+    }
+  `}
 `
 
 export const FigureContent = styled.div`

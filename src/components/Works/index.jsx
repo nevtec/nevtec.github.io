@@ -42,9 +42,9 @@ const Works = () => {
 
       <BgWorks>
         <ContainerWorks>
-          <WorksContent data-aos="fade-up">
+          <WorksContent>
             {mockPortifolios.map((portifolio, index) => (
-              <FigureBox key={index}>
+              <FigureBox data-aos="fade-up" key={index}>
                 <FigureContent img={portifolio.img}>
                   <TextBox>
                     <PositionText>
