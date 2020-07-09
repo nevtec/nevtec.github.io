@@ -5,6 +5,14 @@ const dynanmicVariants = ({ variant, theme }) =>
   primary: `
     color: ${theme.colors.grayTittle};
   `,
+
+  secondary: `
+    color: ${theme.colors.writeHove};
+  `,
+
+  light: `
+    color: ${theme.colors.blueDefault};
+  `,
 }[variant]);
 
 const Description = styled.h1`

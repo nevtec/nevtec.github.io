@@ -18,8 +18,9 @@ export const ContainerHeader = styled.div`
     ${ ({ theme }) => theme.setContainer()};
 `
 
-export const HeaderLogo = styled.div`
-    max-width: 100%;
+export const PositionLogo = styled.div`
+    width: 100%;
+    max-width: 130px;
     margin-right: auto;
     padding: 38px 0;
 `
