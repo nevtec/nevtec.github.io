@@ -6,9 +6,12 @@ import Header from "@components/Header"
 import About from "@components/About"
 import Services from "@components/Services"
 import Works from "@components/Works"
+import Clients from "@components/Clients"
 
 import { ThemeProvider } from "styled-components"
 import "aos/dist/aos.css"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const IndexPage = () => (
   <ThemeProvider theme={theme}>
@@ -17,6 +20,7 @@ const IndexPage = () => (
       <About />
       <Services />
       <Works />
+      <Clients />
     </Layout>
   </ThemeProvider>
 )
