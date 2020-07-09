@@ -1,20 +1,32 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const dynanmicVariants = ({ variant, theme }) =>
-({
-  primary:`
+  ({
+    primary: `
     color: ${theme.colors.whiteDefault};
     width: 76%;
     font-size: 58px;
   `,
 
-  secondary: `
+    secondary: `
     color: ${theme.colors.whiteDefault};
     width: 76%;
     font-size: 70px;
     letter-spacing: 2px;
   `,
-}[variant]);
+
+    light: `
+    color: ${theme.colors.bgMenu};
+    width: 80%;
+    font-size: 52px;
+  `,
+
+    black: `
+    color: ${theme.colors.whiteDefault};
+    width: 76%;
+    font-size: 52px;
+  `,
+  }[variant])
 
 const Title = styled.h2`
   ${dynanmicVariants};
@@ -34,4 +46,4 @@ const Title = styled.h2`
   `}
 `
 
-export default Title;
+export default Title

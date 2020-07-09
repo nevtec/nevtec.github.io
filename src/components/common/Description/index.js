@@ -1,15 +1,19 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const dynanmicVariants = ({ variant, theme }) =>
-({
-  primary: `
+  ({
+    primary: `
     color: ${theme.colors.grayTittle};
   `,
 
-  secondary: `
+    secondary: `
     color: ${theme.colors.writeHove};
   `,
-}[variant]);
+
+    light: `
+    color: ${theme.colors.blueDefault};
+  `,
+  }[variant])
 
 const Description = styled.h1`
   ${dynanmicVariants};
@@ -20,4 +24,4 @@ const Description = styled.h1`
   letter-spacing: 2px;
 `
 
-export default Description;
+export default Description
