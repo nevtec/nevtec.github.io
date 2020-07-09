@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import React, { useEffect, useState } from "react";
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import {
   MenuWrapper,

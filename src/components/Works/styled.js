@@ -13,6 +13,7 @@ export const BgTitle = styled.div`
   width: 100%;
   display: flex;
   padding-bottom: 210px;
+  z-index: -8;
 `
 
 export const BgWorks = styled.div`
@@ -49,6 +50,7 @@ export const WorksContent = styled.div`
   margin-top: -170px;
   display: grid;
   grid-template-columns: auto auto;
+  z-index: -2;
 
   ${({ theme }) => theme.media.phone`
     grid-template-columns: auto;
