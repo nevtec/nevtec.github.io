@@ -31,7 +31,7 @@ const theme = {
     grayText: "#808080",
     grayTittle: "rgba(255,255,255,.5)",
     writeHove: "#000",
-    bgMenu: "#000",
+    bgMenu: "#080808",
     bgBtnMenu: "#000000ad",
     lineColor: "#ffffff6e",
     linelight: "#7575758c",
@@ -39,6 +39,8 @@ const theme = {
     retina: " #0000009c",
     clientsBg: "#e6e6e6",
     grafit: "#555555",
+    brForm: "#0000008f",
+    btnHover: "#246b90",
 
     fbColor: "#3b5998",
     twColor: "#1da1f2",
