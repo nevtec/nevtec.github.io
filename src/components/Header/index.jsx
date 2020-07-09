@@ -1,6 +1,6 @@
-import React, { useEffect } from "react"
-import Aos from "aos"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import React, { useEffect } from "react";
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import Aos from "aos";
 
 import Logo from "@components/Logo/"
 import Menu from "@components/Menu/"
@@ -21,7 +21,7 @@ import {
 
 const scrollToIndex = Header => () => scrollTo(Header)
 
-const scrollToAbout = About => () => scrollTo(About)
+const scrollToAboutPath = About => () => scrollTo(About)
 
 const Header = () => {
   useEffect(() => {
@@ -50,7 +50,7 @@ const Header = () => {
               start a project
             </BtnStyled>
 
-            <BtnStyled variant="primary" onClick={scrollToAbout("#About")}>
+            <BtnStyled variant="primary" onClick={scrollToAboutPath("#About")}>
               more about us
             </BtnStyled>
           </BtnWrapper>

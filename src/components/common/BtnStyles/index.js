@@ -12,6 +12,20 @@ const dynanmicVariants = ({ variant, theme }) =>
       color: ${theme.colors.writeHove};
     }
   `,
+
+  secondary: `
+    width: 100%;
+    height: 50px;
+    color: ${theme.colors.whiteDefault};
+    background: ${theme.colors.blueDefault};
+    font-family: ${theme.fonts.montRegular};
+    border-style: none;
+    
+    &:hover{
+      background: ${theme.colors.btnHover};
+      color: ${theme.colors.writeHove};
+    }
+  `,
 }[variant]);
 
 const BtnStyled = styled.button`

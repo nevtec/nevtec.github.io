@@ -23,7 +23,7 @@ const About = () => {
   }, [])
 
   return (
-    <AboutWrapper>
+    <AboutWrapper id="About">
       <ContainerAbout>
         <ContentHeader data-aos="fade-up">
           <Description variant="secondary">HELLO THERE</Description>
