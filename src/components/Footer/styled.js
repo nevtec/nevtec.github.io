@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import Icons from "@components/Icons";
-
 export const FooterWrapper = styled.footer`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.bgMenu};
@@ -39,56 +37,6 @@ export const TitleFooter = styled.h3`
   font-size: 14px;
   padding-bottom: 8px;
   letter-spacing: 2px;
-`
-export const ContentEmail = styled.div`
-  background: ${({ theme }) => theme.colors.writeHove};
-  max-width: 440px;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: flex-end;
-`
-
-export const EmailWrapper = styled(Icons.Email)`
-  width: 38px;
-  padding: 10px;
-`
-
-export const EmailLine = styled.input`
-  background: none;
-  max-width: 260px;
-  width: 100%;
-  height: 28px;
-  padding-top: 14px;
-  color: ${({ theme }) => theme.colors.whiteDefault};
-  border-style: none;
-
-  &:focus{
-    outline-style: none;
-  }
-`
-
-export const EmailBtn = styled.button`
-  max-width: 124px;
-  width: 100%;
-  height: 96%;
-  color: ${({ theme }) => theme.colors.whiteDefault};
-  background: ${({ theme }) => theme.colors.blueDefault};
-  font-family: ${({ theme }) => theme.fonts.montRegular};
-  font-size: 11px;
-  border-style: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: 0.6s;
-
-  &:focus{
-    outline-style: none;
-  }
-
-  &:hover{
-    background: ${({ theme }) => theme.colors.btnHover};
-  }
 `
 
 export const PositionCopy = styled.div`

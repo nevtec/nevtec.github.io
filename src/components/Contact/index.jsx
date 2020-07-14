@@ -28,8 +28,6 @@ import {
   FaceWrapper,
   TwitterWrapper,
   InstaWrapper,
-  BehanceWrapper,
-  DribbbleWrapper,
 } from "@components/Menu/styled"
 
 const Contact = () => {
@@ -101,18 +99,6 @@ const Contact = () => {
                     <LiSocial>
                       <IconLink href="./">
                         <InstaWrapper />
-                      </IconLink>
-                    </LiSocial>
-
-                    <LiSocial>
-                      <IconLink href="./">
-                        <BehanceWrapper />
-                      </IconLink>
-                    </LiSocial>
-
-                    <LiSocial>
-                      <IconLink href="./">
-                        <DribbbleWrapper />
                       </IconLink>
                     </LiSocial>
                   </UlSocial>

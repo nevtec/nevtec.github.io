@@ -9,10 +9,6 @@ import {
   ContentFooter,
   DescFooter,
   TitleFooter,
-  ContentEmail,
-  EmailWrapper,
-  EmailLine,
-  EmailBtn,
   PositionCopy,
   Copyright,
 } from "./styled"
@@ -44,15 +40,6 @@ const Footer = () => {
               aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt
               iusto porro.
             </DescFooter>
-            <ContentEmail>
-              <EmailWrapper />
-              <EmailLine
-                name="contactEmail"
-                type="email"
-                placeholder="Your E-mail"
-              />
-              <EmailBtn>Subscribe</EmailBtn>
-            </ContentEmail>
           </div>
         </ContentFooter>
 

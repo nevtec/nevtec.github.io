@@ -13,7 +13,6 @@ export const BgTitle = styled.div`
   width: 100%;
   display: flex;
   padding-bottom: 210px;
-  z-index: -8;
 `
 
 export const BgWorks = styled.div`
@@ -50,7 +49,6 @@ export const WorksContent = styled.div`
   margin-top: -170px;
   display: grid;
   grid-template-columns: auto auto;
-  z-index: -2;
 
   ${({ theme }) => theme.media.phone`
     grid-template-columns: auto;
@@ -112,6 +110,7 @@ export const TextBox = styled.figcaption`
   background-color: ${({ theme }) => theme.colors.retina};
   color: ${({ theme }) => theme.colors.whiteDefault};
   opacity: 0;
+  display: flex;
 
   &:hover {
     opacity: 1;
@@ -120,15 +119,16 @@ export const TextBox = styled.figcaption`
 
 export const PositionText = styled.div`
   text-align: left;
-  padding-top: 396px;
   padding-left: 70px;
   line-height: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `
 
 export const LinkWrapper = styled(Icons.Link)`
   width: 24px;
   position: relative;
-  top: -332px;
   cursor: pointer;
   border: 1px solid;
   border-radius: 50px;

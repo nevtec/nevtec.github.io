@@ -49,8 +49,11 @@ const Works = () => {
                   <TextBox>
                     <PositionText>
                       <LinkWrapper />
-                      <TitleBox>{portifolio.title}</TitleBox>
-                      <SubBox>{portifolio.subTitle}</SubBox>
+                      <div>
+                        <TitleBox>{portifolio.title}</TitleBox>
+                        <SubBox>{portifolio.subTitle}</SubBox>
+                      </div>
+                      
                     </PositionText>
                   </TextBox>
                 </FigureContent>
