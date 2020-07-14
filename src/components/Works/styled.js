@@ -13,7 +13,6 @@ export const BgTitle = styled.div`
   width: 100%;
   display: flex;
   padding-bottom: 210px;
-  z-index: -8;
 `
 
 export const BgWorks = styled.div`
@@ -50,9 +49,8 @@ export const WorksContent = styled.div`
   margin-top: -170px;
   display: grid;
   grid-template-columns: auto auto;
-  z-index: -2;
 
-  ${({ theme }) => theme.media.phone`
+  ${({ theme }) => theme.media.tablet`
     grid-template-columns: auto;
   `}
 `
@@ -83,7 +81,7 @@ export const FigureBox = styled.div`
     margin-top: -30px;
   }
 
-  ${({ theme }) => theme.media.phone`
+  ${({ theme }) => theme.media.tablet`
     &:nth-child(3){
       margin-bottom: 30px;
     }
@@ -95,40 +93,49 @@ export const FigureBox = styled.div`
 `
 
 export const FigureContent = styled.div`
-  background-image: ${({ img }) => `url(${img})`};
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   max-width: 565px;
   width: 100%;
   height: 100%;
   transition: all 0.6s;
 `
 
-export const TextBox = styled.figcaption`
+export const Figure = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`
+
+export const TextBox = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: ${({ theme }) => theme.colors.retina};
   color: ${({ theme }) => theme.colors.whiteDefault};
+  top: 0;
   opacity: 0;
+  display: flex;
 
-  &:hover {
+  &:hover{
     opacity: 1;
   }
 `
 
 export const PositionText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5rem;
+  margin: -4rem 0;
   text-align: left;
-  padding-top: 396px;
-  padding-left: 70px;
   line-height: 0.6;
 `
 
 export const LinkWrapper = styled(Icons.Link)`
   width: 24px;
   position: relative;
-  top: -332px;
   cursor: pointer;
   border: 1px solid;
   border-radius: 50px;
@@ -143,12 +150,12 @@ export const LinkWrapper = styled(Icons.Link)`
 export const TitleBox = styled.h3`
   font-family: ${({ theme }) => theme.fonts.montLight};
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 2px;
 `
 
 export const SubBox = styled.p`
   font-family: ${({ theme }) => theme.fonts.montLight};
   color: ${({ theme }) => theme.colors.grayText};
-  font-size: 12px;
+  font-size: 10px;
 `

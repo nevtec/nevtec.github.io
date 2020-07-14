@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MediaWrapper, LiMedia, LinkMedia, TitleSocial, FaceWrapper, TwitterWrapper, InstaWrapper, BehanceWrapper, DribbbleWrapper } from './styled';
+import { MediaWrapper, LiMedia, LinkMedia, TitleSocial, FaceWrapper, TwitterWrapper, InstaWrapper } from './styled';
 
 const SocialMedia = () => (
   <MediaWrapper>
@@ -30,24 +30,6 @@ const SocialMedia = () => (
             <InstaWrapper />
           </figure>
           <TitleSocial>Instagram</TitleSocial>
-        </LinkMedia>
-      </LiMedia>
-
-      <LiMedia>
-        <LinkMedia href="https://www.behance.net/">
-          <figure>
-            <BehanceWrapper />
-          </figure>
-          <TitleSocial>Behance</TitleSocial>
-        </LinkMedia>
-      </LiMedia>
-
-      <LiMedia>
-        <LinkMedia href="https://dribbble.com/">
-          <figure>
-            <DribbbleWrapper />
-          </figure>
-          <TitleSocial>Dribbble</TitleSocial>
         </LinkMedia>
       </LiMedia>
 

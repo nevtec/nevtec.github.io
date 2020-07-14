@@ -16,6 +16,7 @@ export const BtnContent = styled.label`
   right: -8px;
   top: -8px;
   margin: 38px;
+  padding: 0 8px;
   color: ${({ theme }) => theme.colors.whiteDefault};
   font-size: 28px;
   cursor: pointer;
@@ -147,23 +148,5 @@ export const InstaWrapper = styled(Icons.Instagram)`
   &:hover {
     color: ${({ theme }) => theme.colors.instaColor};
     border: 2px solid ${({ theme }) => theme.colors.instaColor};
-  }
-`
-
-export const BehanceWrapper = styled(Icons.Behance)`
-  ${iconsocial};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.behaColor};
-    border: 2px solid ${({ theme }) => theme.colors.behaColor};
-  }
-`
-
-export const DribbbleWrapper = styled(Icons.Dribbble)`
-  ${iconsocial};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.dribbbColor};
-    border: 2px solid ${({ theme }) => theme.colors.dribbbColor};
   }
 `

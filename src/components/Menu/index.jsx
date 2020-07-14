@@ -20,8 +20,6 @@ import {
   FaceWrapper,
   TwitterWrapper,
   InstaWrapper,
-  BehanceWrapper,
-  DribbbleWrapper,
 } from "./styled"
 
 const scrollToHeader = Header => () => scrollTo(Header)
@@ -109,18 +107,6 @@ const Menu = () => {
               <LiSocial>
                 <IconLink href="./">
                   <InstaWrapper />
-                </IconLink>
-              </LiSocial>
-
-              <LiSocial>
-                <IconLink href="./">
-                  <BehanceWrapper />
-                </IconLink>
-              </LiSocial>
-
-              <LiSocial>
-                <IconLink href="./">
-                  <DribbbleWrapper />
                 </IconLink>
               </LiSocial>
             </UlSocial>

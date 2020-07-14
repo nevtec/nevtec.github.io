@@ -87,21 +87,3 @@ export const InstaWrapper = styled(Icons.Instagram)`
     border: 2px solid ${({ theme }) => theme.colors.instaColor};
   }
 `
-
-export const BehanceWrapper = styled(Icons.Behance)`
-  ${iconsocial};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.behaColor};
-    border: 2px solid ${({ theme }) => theme.colors.behaColor};
-  }
-`
-
-export const DribbbleWrapper = styled(Icons.Dribbble)`
-  ${iconsocial};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.dribbbColor};
-    border: 2px solid ${({ theme }) => theme.colors.dribbbColor};
-  }
-`
