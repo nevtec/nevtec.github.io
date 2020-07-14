@@ -1,8 +1,8 @@
-import React, { useEffect } from "react"
-import Aos from "aos"
+import React, { useEffect } from "react";
+import Aos from "aos";
 
-import Title from "@components/common/Title"
-import Description from "@components/common/Description"
+import Title from "@components/common/Title";
+import Description from "@components/common/Description";
 
 import {
   WorksWrapper,
@@ -13,6 +13,7 @@ import {
   WorksContent,
   FigureBox,
   FigureContent,
+  Figure,
   TextBox,
   PositionText,
   LinkWrapper,
@@ -20,7 +21,8 @@ import {
   SubBox,
 } from "./styled"
 
-import { mockPortifolios } from "./mocks"
+import mujer from "@images/mujer.jpg"
+import woodcraft from "@images/woodcraft.jpg"
 
 const Works = () => {
   useEffect(() => {
@@ -43,22 +45,98 @@ const Works = () => {
       <BgWorks>
         <ContainerWorks>
           <WorksContent>
-            {mockPortifolios.map((portifolio, index) => (
-              <FigureBox data-aos="fade-up" key={index}>
-                <FigureContent img={portifolio.img}>
+            
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ mujer } title="alguma coisa" />
                   <TextBox>
                     <PositionText>
                       <LinkWrapper />
                       <div>
-                        <TitleBox>{portifolio.title}</TitleBox>
-                        <SubBox>{portifolio.subTitle}</SubBox>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
                       </div>
-                      
                     </PositionText>
                   </TextBox>
                 </FigureContent>
               </FigureBox>
-            ))}
+
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ woodcraft } title="alguma coisa" />
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <div>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
+                      </div>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ woodcraft } title="alguma coisa" />
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <div>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
+                      </div>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+            
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ mujer } title="alguma coisa" />
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <div>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
+                      </div>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+            
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ mujer } title="alguma coisa" />
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <div>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
+                      </div>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+
+              <FigureBox data-aos="fade-up">
+                <FigureContent>
+                  <Figure src={ woodcraft } title="alguma coisa" />
+                  <TextBox>
+                    <PositionText>
+                      <LinkWrapper />
+                      <div>
+                        <TitleBox>SHUTTERBUG</TitleBox>
+                        <SubBox>Paragráfo</SubBox>
+                      </div>
+                    </PositionText>
+                  </TextBox>
+                </FigureContent>
+              </FigureBox>
+
+            
           </WorksContent>
         </ContainerWorks>
       </BgWorks>
