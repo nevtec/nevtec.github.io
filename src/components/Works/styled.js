@@ -102,6 +102,7 @@ export const FigureContent = styled.div`
 export const Figure = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
 `
 
 export const TextBox = styled.div`
