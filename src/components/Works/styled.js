@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-import Icons from "@components/Icons"
+import Icons from "@components/Icons";
 
 export const WorksWrapper = styled.section`
   display: flex;

@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-import avatar from "@images/avatar.jpg"
+import avatar from "@images/avatar.jpg";
 
 export const TestimonyWrapper = styled.div`
   max-width: 900px;

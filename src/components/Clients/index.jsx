@@ -17,7 +17,6 @@ import {
   DropboxWrapper,
   FirefoxWrapper,
   DisplayLine,
-  LineOrientation,
   LineClients,
 } from "./styled"
 
@@ -67,14 +66,11 @@ const Clients = () => {
         <Testimony />
 
         <DisplayLine>
-          <LineOrientation>
             <LineClients />
-          </LineOrientation>
         </DisplayLine>
       </ContainerClients>
     </ClientsWrapper>
   );
-  
 }
 
 export default Clients;

@@ -1,6 +1,5 @@
-import React from "react"
-
-import Slider from "react-slick"
+import React from "react";
+import Slider from "react-slick";
 
 const SliderShow = ({ children, dots, slidesToShow }) => {
   const settings = {
@@ -14,4 +13,4 @@ const SliderShow = ({ children, dots, slidesToShow }) => {
   return <Slider {...settings}>{children}</Slider>
 }
 
-export default SliderShow
+export default SliderShow;

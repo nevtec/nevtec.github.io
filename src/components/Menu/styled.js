@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-import Icons from "../Icons"
+import Icons from "../Icons";
 
 export const MenuWrapper = styled.div`
   input {
@@ -20,7 +20,7 @@ export const BtnContent = styled.label`
   color: ${({ theme }) => theme.colors.whiteDefault};
   font-size: 28px;
   cursor: pointer;
-  z-index: 99;
+  z-index: 10;
   transition: all 0.6s;
 `
 
@@ -47,9 +47,8 @@ export const SideMenu = styled.div`
   background-color: ${({ theme }) => theme.colors.bgMenu};
   width: 280px;
   height: 100%;
-  position: absolute;
   right: 0;
-  z-index: 98;
+  z-index: 9;
   position: fixed;
   transform: translateX(280px);
   transition: all 0.6s;

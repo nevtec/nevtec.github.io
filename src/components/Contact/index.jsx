@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import Aos from "aos"
+import React, { useEffect } from "react";
+import Aos from "aos";
 
 import Title from "@components/common/Title"
 import Description from "@components/common/Description"
@@ -113,4 +113,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
