@@ -1,4 +1,4 @@
-const MAX_WIDTH = "1255px"
+const MAX_WIDTH = "1255px";
 
 const breakpoints = {
   desktop: 960,
@@ -64,4 +64,4 @@ const theme = {
   }, {}),
 }
 
-export default theme
+export default theme;

@@ -94,15 +94,11 @@ export const DisplayLine = styled.div`
   position: relative;
 `
 
-export const LineOrientation = styled.div`
-  position: absolute;
-  bottom: -72px;
-`
-
 export const LineClients = styled.div`
   position: absolute;
-  bottom: -146px;
+  bottom: -14rem;
   width: 2px;
   height: 160px;
   background-color: ${({ theme }) => theme.colors.blueDefault};
+  z-index: 8;
 `

@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
-import Aos from "aos"
+import React, { useEffect } from "react";
 
-import Logo from "@components/Logo/"
+import Logo from "@components/Logo/";
 
 import {
   FooterWrapper,
@@ -14,10 +13,6 @@ import {
 } from "./styled"
 
 const Footer = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000, offset: 210 })
-  }, [])
-
   return (
     <FooterWrapper>
       <ContainerFooter>
@@ -51,4 +46,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

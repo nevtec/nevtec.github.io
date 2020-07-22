@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const dynanmicVariants = ({ variant, theme }) =>
   ({
@@ -46,4 +46,4 @@ const Title = styled.h2`
   `}
 `
 
-export default Title
+export default Title;
